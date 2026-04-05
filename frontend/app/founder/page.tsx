@@ -18,7 +18,7 @@ export default function Founder() {
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#FAFAF8] leading-tight mb-6 sm:mb-8">
             Rajesh Thakur
           </h1>
-          <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#B8956A] leading-tight mb-8 sm:mb-10">
+          <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#B68817] leading-tight mb-8 sm:mb-10">
             Architect of Founder Freedom
           </p>
           <p className="text-[#D1D5DB] text-base sm:text-lg md:text-xl leading-relaxed mb-4 sm:mb-6 max-w-2xl">
@@ -32,13 +32,13 @@ export default function Founder() {
               href="https://www.linkedin.com/in/rajesh-thakur-entrepreneur/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md text-center"
+              className="px-6 py-3 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md text-center"
             >
               Connect on LinkedIn
             </a>
             <a 
               href="mailto:srajesh2006@gmail.com"
-              className="px-6 py-3 border border-[#B8956A] text-[#B8956A] rounded-sm font-medium hover:bg-[#B8956A]/10 transition-all duration-150 text-center"
+              className="px-6 py-3 border border-[#B68817] text-[#B68817] rounded-sm font-medium hover:bg-[#B68817]/10 transition-all duration-150 text-center"
             >
               Get in Touch
             </a>
@@ -54,7 +54,7 @@ export default function Founder() {
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F1419] mb-6 sm:mb-8">
             The TFSA Framework
           </h2>
-          <div className="h-1 w-20 bg-[#B8956A] mb-10 sm:mb-12"></div>
+          <div className="h-1 w-20 bg-[#B68817] mb-10 sm:mb-12"></div>
           <div className="bg-white border border-[#E5E7EB] rounded-sm p-8 sm:p-10 md:p-12 mb-8">
             <p className="text-[#374151] text-lg leading-relaxed mb-6">
               Rajesh&apos;s proprietary methodology, refined over two decades and 50+ founder engagements, focuses on three interconnected pillars: <strong>Strategic Clarity, Operational Systems, and Founder Independence</strong>.
@@ -74,7 +74,7 @@ export default function Founder() {
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#FAFAF8] mb-6 sm:mb-8">
             Areas of Specialization
           </h2>
-          <div className="h-1 w-20 bg-[#B8956A] mb-12 sm:mb-16"></div>
+          <div className="h-1 w-20 bg-[#B68817] mb-12 sm:mb-16"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8">
@@ -237,7 +237,7 @@ export default function Founder() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-4 sm:px-6 lg:px-8 py-3 border border-amber-600 text-[#B8956A] rounded-sm font-medium hover:bg-[#B8956A] hover:text-[#FAFAF8] transition-colors duration-150"
+              className="inline-block px-4 sm:px-6 lg:px-8 py-3 border border-amber-600 text-[#B68817] rounded-sm font-medium hover:bg-[#B68817] hover:text-[#FAFAF8] transition-colors duration-150"
             >
               Connect on LinkedIn
             </a>

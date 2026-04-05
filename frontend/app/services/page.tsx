@@ -37,18 +37,18 @@ export default function Services() {
               <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#FAFAF8] mb-4 sm:mb-6">
                 Market Entry Architecture
               </h3>
-              <div className="h-1 w-16 bg-[#B8956A] mb-6 sm:mb-8"></div>
+              <div className="h-1 w-16 bg-[#B68817] mb-6 sm:mb-8"></div>
               <p className="text-[#D1D5DB] text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
                 Strategic clarity for entering new markets, especially India. We help you understand market dynamics, navigate regulatory complexity, and design your initial go-to-market approach with confidence.
               </p>
               <div className="space-y-4 mb-8">
                 <div>
-                  <h4 className="text-[#B8956A] font-semibold text-sm uppercase tracking-wide mb-3">Strategic Outcomes</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm uppercase tracking-wide mb-3">Strategic Outcomes</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Market dynamics and competitive positioning</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Regulatory and operational setup</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Initial team structure and org design</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>6-month market entry roadmap</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Market dynamics and competitive positioning</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Regulatory and operational setup</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Initial team structure and org design</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>6-month market entry roadmap</span></li>
                   </ul>
                 </div>
               </div>
@@ -60,15 +60,15 @@ export default function Services() {
               <svg className="w-full h-full max-w-xs" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="service1grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#B8956A', stopOpacity: 1 }} />
+                    <stop offset="0%" style={{ stopColor: '#B68817', stopOpacity: 1 }} />
                     <stop offset="100%" style={{ stopColor: '#4B9B8E', stopOpacity: 0.6 }} />
                   </linearGradient>
                 </defs>
                 <circle cx="150" cy="150" r="120" fill="none" stroke="url(#service1grad)" strokeWidth="2" opacity="0.4" />
-                <circle cx="150" cy="150" r="80" fill="none" stroke="#B8956A" strokeWidth="2" opacity="0.6" />
+                <circle cx="150" cy="150" r="80" fill="none" stroke="#B68817" strokeWidth="2" opacity="0.6" />
                 <circle cx="150" cy="150" r="40" fill="none" stroke="#4B9B8E" strokeWidth="2" opacity="0.8" />
-                <circle cx="150" cy="150" r="10" fill="#B8956A" />
-                <path d="M150 140 L150 50" stroke="#B8956A" strokeWidth="1" opacity="0.5" />
+                <circle cx="150" cy="150" r="10" fill="#B68817" />
+                <path d="M150 140 L150 50" stroke="#B68817" strokeWidth="1" opacity="0.5" />
                 <path d="M160 150 L240 150" stroke="#4B9B8E" strokeWidth="1" opacity="0.5" />
               </svg>
             </div>
@@ -80,18 +80,18 @@ export default function Services() {
               <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#FAFAF8] mb-4 sm:mb-6">
                 GTM & Distribution Design
               </h3>
-              <div className="h-1 w-16 bg-[#B8956A] mb-6 sm:mb-8"></div>
+              <div className="h-1 w-16 bg-[#B68817] mb-6 sm:mb-8"></div>
               <p className="text-[#D1D5DB] text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
                 Build repeatable, scalable distribution channels. We design your go-to-market strategy, sales systems, and customer acquisition framework to drive sustainable growth and market penetration.
               </p>
               <div className="space-y-5 mb-8">
                 <div>
-                  <h4 className="text-[#B8956A] font-semibold text-sm uppercase tracking-wide mb-3">Strategic Focus</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm uppercase tracking-wide mb-3">Strategic Focus</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Distribution channels and partnerships</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Sales process and team structure</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Customer acquisition and retention</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Revenue model and pricing strategy</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Distribution channels and partnerships</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Sales process and team structure</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Customer acquisition and retention</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Revenue model and pricing strategy</span></li>
                   </ul>
                 </div>
               </div>
@@ -104,16 +104,16 @@ export default function Services() {
                 <defs>
                   <linearGradient id="service2grad" x1="0%" y1="100%" x2="100%" y2="0%">
                     <stop offset="0%" style={{ stopColor: '#4B9B8E', stopOpacity: 0.8 }} />
-                    <stop offset="100%" style={{ stopColor: '#B8956A', stopOpacity: 1 }} />
+                    <stop offset="100%" style={{ stopColor: '#B68817', stopOpacity: 1 }} />
                   </linearGradient>
                 </defs>
                 <path d="M 50 250 L 250 250" stroke="#374151" strokeWidth="2" />
                 <path d="M 80 250 L 80 150" stroke="url(#service2grad)" strokeWidth="3" />
-                <path d="M 150 250 L 150 100" stroke="#B8956A" strokeWidth="3" />
+                <path d="M 150 250 L 150 100" stroke="#B68817" strokeWidth="3" />
                 <path d="M 220 250 L 220 180" stroke="#4B9B8E" strokeWidth="3" />
-                <circle cx="80" cy="140" r="8" fill="#B8956A" />
-                <circle cx="150" cy="90" r="8" fill="#B8956A" />
-                <circle cx="220" cy="170" r="8" fill="#B8956A" />
+                <circle cx="80" cy="140" r="8" fill="#B68817" />
+                <circle cx="150" cy="90" r="8" fill="#B68817" />
+                <circle cx="220" cy="170" r="8" fill="#B68817" />
               </svg>
             </div>
           </div>
@@ -136,11 +136,11 @@ export default function Services() {
             <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8 flex flex-col justify-between">
               <div className="space-y-4 mb-4 sm:mb-6">
                 <div>
-                  <p className="text-[#B8956A] font-semibold text-sm mb-2">Core Focus</p>
+                  <p className="text-[#B68817] font-semibold text-sm mb-2">Core Focus</p>
                   <p className="text-[#FAFAF8] text-sm">Founder independence through architecture</p>
                 </div>
                 <div>
-                  <p className="text-[#B8956A] font-semibold text-sm mb-2">Timeline</p>
+                  <p className="text-[#B68817] font-semibold text-sm mb-2">Timeline</p>
                   <p className="text-[#FAFAF8] text-sm">Ongoing (3-6 month+ retainer)</p>
                 </div>
               </div>
@@ -151,19 +151,19 @@ export default function Services() {
             <h4 className="text-[#FAFAF8] font-semibold mb-4">What You Get</h4>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <li className="text-[#9CA3AF] text-sm flex items-start gap-2">
-                <span className="text-[#B8956A] mt-1">→</span>
+                <span className="text-[#B68817] mt-1">→</span>
                 <span>Execution framework and systems</span>
               </li>
               <li className="text-[#9CA3AF] text-sm flex items-start gap-2">
-                <span className="text-[#B8956A] mt-1">→</span>
+                <span className="text-[#B68817] mt-1">→</span>
                 <span>Leadership team architecture</span>
               </li>
               <li className="text-[#9CA3AF] text-sm flex items-start gap-2">
-                <span className="text-[#B8956A] mt-1">→</span>
+                <span className="text-[#B68817] mt-1">→</span>
                 <span>Decision frameworks and accountability</span>
               </li>
               <li className="text-[#9CA3AF] text-sm flex items-start gap-2">
-                <span className="text-[#B8956A] mt-1">→</span>
+                <span className="text-[#B68817] mt-1">→</span>
                 <span>Scaling playbook and metrics</span>
               </li>
             </ul>

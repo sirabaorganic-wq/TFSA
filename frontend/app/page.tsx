@@ -26,7 +26,7 @@ export default function Home() {
               <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#FAFAF8] leading-tight mb-2">
                 Design Your Business.
               </h1>
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#B8956A] leading-tight mb-8 sm:mb-10">
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#B68817] leading-tight mb-8 sm:mb-10">
                 Build Your Freedom.
               </h2>
               <p className="text-[#D1D5DB] text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
@@ -48,7 +48,7 @@ export default function Home() {
                 {/* Abstract framework lines - premium geometric design */}
                 <defs>
                   <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#B8956A', stopOpacity: 1 }} />
+                    <stop offset="0%" style={{ stopColor: '#B68817', stopOpacity: 1 }} />
                     <stop offset="100%" style={{ stopColor: '#4B9B8E', stopOpacity: 0.6 }} />
                   </linearGradient>
                 </defs>
@@ -57,7 +57,7 @@ export default function Home() {
                 <path d="M 50 350 L 350 350" stroke="#374151" strokeWidth="2" fill="none" />
 
                 {/* Vertical pillars */}
-                <path d="M 100 350 L 100 100" stroke="#B8956A" strokeWidth="3" opacity="0.8" />
+                <path d="M 100 350 L 100 100" stroke="#B68817" strokeWidth="3" opacity="0.8" />
                 <path d="M 200 350 L 200 80" stroke="url(#grad1)" strokeWidth="3" opacity="0.9" />
                 <path d="M 300 350 L 300 120" stroke="#4B9B8E" strokeWidth="3" opacity="0.7" />
 
@@ -67,13 +67,13 @@ export default function Home() {
                 <path d="M 50 140 L 350 140" stroke="#1F2937" strokeWidth="1" opacity="0.5" strokeDasharray="5,5" />
 
                 {/* Top capstone */}
-                <circle cx="200" cy="50" r="15" stroke="#B8956A" strokeWidth="2" fill="none" />
-                <path d="M 200 35 L 200 20" stroke="#B8956A" strokeWidth="2" />
+                <circle cx="200" cy="50" r="15" stroke="#B68817" strokeWidth="2" fill="none" />
+                <path d="M 200 35 L 200 20" stroke="#B68817" strokeWidth="2" />
 
                 {/* Connecting lines for network effect */}
                 <path d="M 100 200 L 200 150" stroke="#4B9B8E" strokeWidth="1.5" opacity="0.4" />
                 <path d="M 200 150 L 300 180" stroke="#4B9B8E" strokeWidth="1.5" opacity="0.4" />
-                <path d="M 100 120 L 300 150" stroke="#B8956A" strokeWidth="1" opacity="0.3" />
+                <path d="M 100 120 L 300 150" stroke="#B68817" strokeWidth="1" opacity="0.3" />
               </svg>
             </div>
           </div>
@@ -107,19 +107,19 @@ export default function Home() {
           </h2>
           <div className="space-y-5 sm:space-y-6">
             <div>
-              <h3 className="text-[#B8956A] font-semibold text-lg mb-2">We architect, we don&apos;t advise.</h3>
+              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We architect, we don&apos;t advise.</h3>
               <p className="text-[#D1D5DB] text-lg leading-relaxed">
                 Every recommendation is operational, executable, and tied to business outcomes.
               </p>
             </div>
             <div>
-              <h3 className="text-[#B8956A] font-semibold text-lg mb-2">We eliminate founder dependency through systems.</h3>
+              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We eliminate founder dependency through systems.</h3>
               <p className="text-[#D1D5DB] text-lg leading-relaxed">
                 You remain the visionary. We build the structure that lets your team execute without you.
               </p>
             </div>
             <div>
-              <h3 className="text-[#B8956A] font-semibold text-lg mb-2">We specialize in market entry and scale.</h3>
+              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We specialize in market entry and scale.</h3>
               <p className="text-[#D1D5DB] text-lg leading-relaxed">
                 India market complexity, GTM strategy, and execution architecture are our core domains.
               </p>
@@ -146,15 +146,15 @@ export default function Home() {
               </p>
               <ul className="space-y-2 text-sm text-[#374151]">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Market analysis and competitive positioning</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>India-specific regulatory and operational setup</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Initial org structure and team design</span>
                 </li>
               </ul>
@@ -168,15 +168,15 @@ export default function Home() {
               </p>
               <ul className="space-y-2 text-sm text-[#374151]">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Distribution strategy and channel design</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Sales and customer acquisition systems</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Leadership team and delegation framework</span>
                 </li>
               </ul>
@@ -190,15 +190,15 @@ export default function Home() {
               </p>
               <ul className="space-y-2 text-sm text-[#374151]">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Execution systems and decision frameworks</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Team scaling and operational structure</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#B8956A] font-bold">•</span>
+                  <span className="text-[#B68817] font-bold">•</span>
                   <span>Founder freedom and strategic positioning</span>
                 </li>
               </ul>
@@ -224,16 +224,16 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B8956A]">Model:</strong> Founder Architecture Model
+                  <strong className="text-[#B68817]">Model:</strong> Founder Architecture Model
                 </div>
                 <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B8956A]">Momentum:</strong> GTM & Distribution
+                  <strong className="text-[#B68817]">Momentum:</strong> GTM & Distribution
                 </div>
                 <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B8956A]">Money:</strong> Financial Architecture
+                  <strong className="text-[#B68817]">Money:</strong> Financial Architecture
                 </div>
                 <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B8956A]">Freedom:</strong> Founder Independence
+                  <strong className="text-[#B68817]">Freedom:</strong> Founder Independence
                 </div>
               </div>
             </div>

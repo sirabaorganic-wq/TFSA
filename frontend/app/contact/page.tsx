@@ -94,7 +94,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B8956A] focus:ring-1 focus:ring-[#B8956A]/30 transition-colors"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B68817] focus:ring-1 focus:ring-[#B68817]/30 transition-colors"
                       placeholder="John Doe"
                     />
                   </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B8956A] focus:ring-1 focus:ring-[#B8956A]/30 transition-colors"
+                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B68817] focus:ring-1 focus:ring-[#B68817]/30 transition-colors"
                       placeholder="you@company.com"
                     />
                   </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B8956A] focus:ring-1 focus:ring-[#B8956A]/30 transition-colors"
+                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B68817] focus:ring-1 focus:ring-[#B68817]/30 transition-colors"
                       placeholder="Your Startup"
                     />
                   </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                       name="stage"
                       value={formData.stage}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-[#FAFAF8] focus:outline-none focus:border-[#B8956A] focus:ring-1 focus:ring-[#B8956A]/30 transition-colors"
+                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-[#FAFAF8] focus:outline-none focus:border-[#B68817] focus:ring-1 focus:ring-[#B68817]/30 transition-colors"
                     >
                       <option value="">Select your stage</option>
                       <option value="idea">Idea / MVP</option>
@@ -159,7 +159,7 @@ export default function Contact() {
                       value={formData.challenge}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B8956A] focus:ring-1 focus:ring-[#B8956A]/30 transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-[#1F2937] border border-[#1F2937]/30 rounded-sm text-sm text-[#FAFAF8] placeholder-[#6B7280] px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-[#B68817] focus:ring-1 focus:ring-[#B68817]/30 transition-colors resize-none"
                       placeholder="Tell us about your current challenges, market, and growth goals..."
                     />
                   </div>
@@ -197,7 +197,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full px-4 sm:px-6 lg:px-8 py-3 bg-[#B8956A] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 text-lg"
+                    className="w-full px-4 sm:px-6 lg:px-8 py-3 bg-[#B68817] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 text-lg"
                   >
                     Schedule a Strategic Consultation
                   </button>
@@ -219,12 +219,12 @@ export default function Contact() {
                 {/* Email */}
                 <div>
                   <div className="flex items-start gap-4 mb-4">
-                    <Mail className="text-[#B8956A] flex-shrink-0 mt-1" size={20} />
+                    <Mail className="text-[#B68817] flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h3 className="font-semibold text-[#FAFAF8] mb-1">Email</h3>
                       <a
                         href="mailto:rajeshthakur2006@gmail.com"
-                        className="text-[#9CA3AF] hover:text-[#B8956A] transition-colors text-sm"
+                        className="text-[#9CA3AF] hover:text-[#B68817] transition-colors text-sm"
                       >
                         rajeshthakur2006@gmail.com
                       </a>
@@ -238,12 +238,12 @@ export default function Contact() {
                 {/* Phone */}
                 <div>
                   <div className="flex items-start gap-4 mb-4">
-                    <PhoneIcon className="text-[#B8956A] flex-shrink-0 mt-1" size={20} />
+                    <PhoneIcon className="text-[#B68817] flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h3 className="font-semibold text-[#FAFAF8] mb-1">Phone</h3>
                       <a
                         href="tel:+919116633119"
-                        className="text-[#9CA3AF] hover:text-[#B8956A] transition-colors text-sm"
+                        className="text-[#9CA3AF] hover:text-[#B68817] transition-colors text-sm"
                       >
                         +91 9116633119
                       </a>
@@ -257,14 +257,14 @@ export default function Contact() {
                 {/* LinkedIn */}
                 <div>
                   <div className="flex items-start gap-4 mb-4">
-                    <Linkedin className="text-[#B8956A] flex-shrink-0 mt-1" size={20} />
+                    <Linkedin className="text-[#B68817] flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h3 className="font-semibold text-[#FAFAF8] mb-1">LinkedIn</h3>
                       <a
                         href="https://www.linkedin.com/in/rajesh-thakur-entrepreneur/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#9CA3AF] hover:text-[#B8956A] transition-colors text-sm"
+                        className="text-[#9CA3AF] hover:text-[#B68817] transition-colors text-sm"
                       >
                         Connect with Rajesh
                       </a>
@@ -358,7 +358,7 @@ export default function Contact() {
           </p>
           <a
             href="#contact"
-            className="inline-block px-4 sm:px-6 lg:px-8 py-3 bg-[#B8956A] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors"
+            className="inline-block px-4 sm:px-6 lg:px-8 py-3 bg-[#B68817] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors"
           >
             Back to Contact Form
           </a>

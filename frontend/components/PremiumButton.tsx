@@ -17,8 +17,8 @@ export function PremiumButton({
   const baseClasses = 'inline-block px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-sm font-medium transition-all duration-150'
 
   const variantClasses = {
-    primary: 'bg-[#B8956A] text-white hover:bg-[#A08560] focus:outline-none focus:ring-2 focus:ring-[#B8956A] focus:ring-offset-2 focus:ring-offset-[#0F1419]',
-    secondary: 'border border-[#B8956A] text-[#B8956A] hover:bg-[#B8956A] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#B8956A]',
+    primary: 'bg-[#B68817] text-white hover:bg-[#A08560] focus:outline-none focus:ring-2 focus:ring-[#B68817] focus:ring-offset-2 focus:ring-offset-[#0F1419]',
+    secondary: 'border border-[#B68817] text-[#B68817] hover:bg-[#B68817] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#B68817]',
   }
 
   return (
@@ -46,8 +46,8 @@ export function PremiumButtonInline({
   const baseClasses = 'px-6 py-3 rounded-sm font-medium transition-all duration-150 cursor-pointer'
 
   const variantClasses = {
-    primary: 'bg-[#B8956A] text-white hover:bg-[#A08560] focus:outline-none focus:ring-2 focus:ring-[#B8956A] focus:ring-offset-2 focus:ring-offset-[#0F1419]',
-    secondary: 'border border-[#B8956A] text-[#B8956A] hover:bg-[#B8956A] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#B8956A]',
+    primary: 'bg-[#B68817] text-white hover:bg-[#A08560] focus:outline-none focus:ring-2 focus:ring-[#B68817] focus:ring-offset-2 focus:ring-offset-[#0F1419]',
+    secondary: 'border border-[#B68817] text-[#B68817] hover:bg-[#B68817] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#B68817]',
   }
 
   return (

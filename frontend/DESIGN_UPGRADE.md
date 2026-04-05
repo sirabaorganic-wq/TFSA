@@ -33,7 +33,7 @@ Complete redesign of The Freedom Startup Architect™ website to feel expensive,
   
 - **Right Column (30% width)**: Premium framework graphic
   - Abstract SVG with geometric lines (no illustration)
-  - Uses gradient colors (#B8956A to #4B9B8E)
+  - Uses gradient colors (#B68817 to #4B9B8E)
   - Architectural blueprint aesthetic
   - Circles, layers, and connecting lines represent systems thinking
 
@@ -186,14 +186,14 @@ Complete redesign of The Freedom Startup Architect™ website to feel expensive,
 ## 7. Color & Visual Language
 
 ### Existing Premium Palette
-- **Primary Gold**: #B8956A (accent, dividers, highlights)
+- **Primary Gold**: #B68817 (accent, dividers, highlights)
 - **Teal**: #4B9B8E (gradient accents)
 - **Dark Navy**: #0F1419 (dark sections)
 - **Warm White**: #FAFAF8 (light sections)
 - **Charcoal**: #374151 (text)
 
 ### New Visual Elements
-- **Gold divider bars**: `h-1 w-20 bg-[#B8956A]`
+- **Gold divider bars**: `h-1 w-20 bg-[#B68817]`
 - **Gradient SVGs**: Premium framework graphics
 - **Subtle borders**: `border-[#374151]/50`
 - **Layered surfaces**: Card depth and dimension

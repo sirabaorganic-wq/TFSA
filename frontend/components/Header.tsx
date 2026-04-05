@@ -54,7 +54,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-3 lg:gap-4 flex-shrink-0">
             <Link
               href="/contact"
-              className="px-4 lg:px-6 py-2 text-sm lg:text-base bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md"
+              className="px-4 lg:px-6 py-2 text-sm lg:text-base bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md"
             >
               Book a Call
             </Link>
@@ -85,7 +85,7 @@ export function Header() {
             ))}
             <Link
               href="/contact"
-              className="block px-4 sm:px-6 py-2 text-xs sm:text-sm bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors text-center mt-3"
+              className="block px-4 sm:px-6 py-2 text-xs sm:text-sm bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors text-center mt-3"
               onClick={() => setIsOpen(false)}
             >
               Book a Call

@@ -38,7 +38,7 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-4 sm:p-6 md:p-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="inline-block bg-[#B8956A] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
+                  <span className="inline-block bg-[#B68817] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
                     PILLAR 1
                   </span>
                   <h3 className="font-serif text-3xl font-bold text-[#FAFAF8]">
@@ -49,7 +49,7 @@ export default function HowItWorks() {
                   We begin by understanding your current state. Where are you now? What are your strategic blind spots? How dependent is the organization on you?
                 </p>
                 <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-6 mb-4 sm:mb-6">
-                  <h4 className="text-[#B8956A] font-semibold text-sm mb-3">Diagnostic Framework</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm mb-3">Diagnostic Framework</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
                     <li>• TFSA Radar™ assessment</li>
                     <li>• Founder Dependency Risk Index (FDRI)</li>
@@ -60,7 +60,7 @@ export default function HowItWorks() {
               </div>
               <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8 h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-5xl font-serif text-[#B8956A] mb-4">1</div>
+                  <div className="text-5xl font-serif text-[#B68817] mb-4">1</div>
                   <p className="text-[#D1D5DB]">Foundation Understanding</p>
                 </div>
               </div>
@@ -72,13 +72,13 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-4 sm:p-6 md:p-8 items-center">
               <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8 h-full flex items-center justify-center order-2 lg:order-1">
                 <div className="text-center">
-                  <div className="text-5xl font-serif text-[#B8956A] mb-4">2</div>
+                  <div className="text-5xl font-serif text-[#B68817] mb-4">2</div>
                   <p className="text-[#D1D5DB]">Strategic Blueprint</p>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="mb-4">
-                  <span className="inline-block bg-[#B8956A] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
+                  <span className="inline-block bg-[#B68817] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
                     PILLAR 2
                   </span>
                   <h3 className="font-serif text-3xl font-bold text-[#FAFAF8]">
@@ -89,7 +89,7 @@ export default function HowItWorks() {
                   Based on your diagnosis, we design your optimal architecture. This covers market strategy, organizational structure, execution systems, and founder independence roadmap.
                 </p>
                 <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-6">
-                  <h4 className="text-[#B8956A] font-semibold text-sm mb-3">Architecture Deliverables</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm mb-3">Architecture Deliverables</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
                     <li>• Market entry or scaling strategy</li>
                     <li>• Org and team structure design</li>
@@ -106,7 +106,7 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-4 sm:p-6 md:p-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="inline-block bg-[#B8956A] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
+                  <span className="inline-block bg-[#B68817] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
                     PILLAR 3
                   </span>
                   <h3 className="font-serif text-3xl font-bold text-[#FAFAF8]">
@@ -117,7 +117,7 @@ export default function HowItWorks() {
                   We operationalize the architecture. This means building systems, processes, and frameworks that enable your team to execute without founder micromanagement.
                 </p>
                 <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-6 mb-4 sm:mb-6">
-                  <h4 className="text-[#B8956A] font-semibold text-sm mb-3">Implementation</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm mb-3">Implementation</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
                     <li>• Startup Operating System (SOS™)</li>
                     <li>• Team training and alignment</li>
@@ -128,7 +128,7 @@ export default function HowItWorks() {
               </div>
               <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8 h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-5xl font-serif text-[#B8956A] mb-4">3</div>
+                  <div className="text-5xl font-serif text-[#B68817] mb-4">3</div>
                   <p className="text-[#D1D5DB]">Operational Reality</p>
                 </div>
               </div>
@@ -140,13 +140,13 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-4 sm:p-6 md:p-8 items-center">
               <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-4 sm:p-6 md:p-8 h-full flex items-center justify-center order-2 lg:order-1">
                 <div className="text-center">
-                  <div className="text-5xl font-serif text-[#B8956A] mb-4">4</div>
+                  <div className="text-5xl font-serif text-[#B68817] mb-4">4</div>
                   <p className="text-[#D1D5DB]">Sustainable Growth</p>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="mb-4">
-                  <span className="inline-block bg-[#B8956A] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
+                  <span className="inline-block bg-[#B68817] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
                     PILLAR 4
                   </span>
                   <h3 className="font-serif text-3xl font-bold text-[#FAFAF8]">
@@ -157,7 +157,7 @@ export default function HowItWorks() {
                   With systems in place, you scale confidently. We support you in expanding operations, entering new markets, and building a truly founder-independent organization.
                 </p>
                 <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-6">
-                  <h4 className="text-[#B8956A] font-semibold text-sm mb-3">Scaling Support</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm mb-3">Scaling Support</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
                     <li>• Team expansion and hiring</li>
                     <li>• Multi-market scaling</li>
@@ -174,7 +174,7 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-4 sm:p-6 md:p-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="inline-block bg-[#B8956A] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
+                  <span className="inline-block bg-[#B68817] text-[#FAFAF8] px-4 py-2 rounded-sm text-sm font-semibold mb-2">
                     PILLAR 5
                   </span>
                   <h3 className="font-serif text-3xl font-bold text-[#FAFAF8]">
@@ -185,7 +185,7 @@ export default function HowItWorks() {
                   The ultimate outcome. You are strategically free. Your team executes without you. Your business is built on systems, not your effort. You have achieved founder independence.
                 </p>
                 <div className="bg-slate-900 border border-[#1F2937]/30 rounded-sm p-6 mb-4 sm:mb-6">
-                  <h4 className="text-[#B8956A] font-semibold text-sm mb-3">Your Freedom Includes</h4>
+                  <h4 className="text-[#B68817] font-semibold text-sm mb-3">Your Freedom Includes</h4>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
                     <li>• Strategic decision-making authority</li>
                     <li>• Operational independence</li>
@@ -196,7 +196,7 @@ export default function HowItWorks() {
               </div>
               <div className="bg-gradient-to-b from-amber-600/20 to-transparent border border-amber-600/30 rounded-sm p-4 sm:p-6 md:p-8 h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-5xl font-serif text-[#B8956A] mb-4">5</div>
+                  <div className="text-5xl font-serif text-[#B68817] mb-4">5</div>
                   <p className="text-amber-200 font-semibold">Founder Independence Achieved</p>
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function HowItWorks() {
           </p>
           <a
             href="/contact"
-            className="inline-block px-4 sm:px-6 lg:px-8 py-3 bg-[#B8956A] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150"
+            className="inline-block px-4 sm:px-6 lg:px-8 py-3 bg-[#B68817] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150"
           >
             Schedule Your Diagnostic
           </a>

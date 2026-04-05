@@ -56,7 +56,7 @@ export function FrameworkShowcase({
       {ctaLabel && ctaHref && (
         <a
           href={ctaHref}
-          className="inline-block px-6 py-3 bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 shadow-sm hover:shadow-md"
+          className="inline-block px-6 py-3 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 shadow-sm hover:shadow-md"
         >
           {ctaLabel}
         </a>

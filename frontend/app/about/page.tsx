@@ -40,7 +40,7 @@ export default function About() {
               <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                 <div className="md:w-1/3">
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0F1419] mb-3 sm:mb-4">Strategy</h3>
-                  <div className="h-1 w-16 bg-[#B8956A]"></div>
+                  <div className="h-1 w-16 bg-[#B68817]"></div>
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-[#374151] text-base sm:text-lg leading-relaxed mb-5 sm:mb-6">
@@ -48,15 +48,15 @@ export default function About() {
                   </p>
                   <ul className="space-y-2 text-sm sm:text-base text-[#374151]">
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>India market dynamics expertise and competitive positioning</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Go-to-market clarity and customer acquisition strategy</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Strategic outcomes focus with measurable KPIs</span>
                     </li>
                   </ul>
@@ -69,7 +69,7 @@ export default function About() {
               <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                 <div className="md:w-1/3">
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0F1419] mb-3 sm:mb-4">Systems</h3>
-                  <div className="h-1 w-16 bg-[#B8956A]"></div>
+                  <div className="h-1 w-16 bg-[#B68817]"></div>
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-[#374151] text-base sm:text-lg leading-relaxed mb-5 sm:mb-6">
@@ -77,15 +77,15 @@ export default function About() {
                   </p>
                   <ul className="space-y-2 text-sm sm:text-base text-[#374151]">
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Decision frameworks and accountability structures</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Scalable processes and organizational design</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Team alignment, clarity, and leadership delegation</span>
                     </li>
                   </ul>
@@ -98,7 +98,7 @@ export default function About() {
               <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                 <div className="md:w-1/3">
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0F1419] mb-3 sm:mb-4">Execution</h3>
-                  <div className="h-1 w-16 bg-[#B8956A]"></div>
+                  <div className="h-1 w-16 bg-[#B68817]"></div>
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-[#374151] text-base sm:text-lg leading-relaxed mb-5 sm:mb-6">
@@ -106,15 +106,15 @@ export default function About() {
                   </p>
                   <ul className="space-y-2 text-sm sm:text-base text-[#374151]">
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>On-ground delivery, iteration, and course correction</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Founder dependency elimination through delegation</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#B8956A] font-bold">→</span>
+                      <span className="text-[#B68817] font-bold">→</span>
                       <span>Measurable business outcomes and sustainable scaling</span>
                     </li>
                   </ul>
@@ -165,7 +165,7 @@ export default function About() {
                 <tr className="border-b border-[#374151]">
                   <th className="text-left py-4 px-4 text-[#FAFAF8] font-semibold">Aspect</th>
                   <th className="text-left py-4 px-4 text-[#9CA3AF] font-medium">Traditional Consulting</th>
-                  <th className="text-left py-4 px-4 text-[#B8956A] font-medium">TFSA Approach</th>
+                  <th className="text-left py-4 px-4 text-[#B68817] font-medium">TFSA Approach</th>
                 </tr>
               </thead>
               <tbody>

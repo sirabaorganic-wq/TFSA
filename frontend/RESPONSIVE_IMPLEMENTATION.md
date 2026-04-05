@@ -46,7 +46,7 @@ All headings and text scale appropriately:
 #### Forms
 - Labels: `text-xs sm:text-sm`
 - Inputs: `px-3 sm:px-4 py-2 sm:py-3 text-sm`
-- Focus ring: `focus:ring-1 focus:ring-[#B8956A]/30`
+- Focus ring: `focus:ring-1 focus:ring-[#B68817]/30`
 
 ### 5. Page-Level Responsive Improvements
 All pages optimized:

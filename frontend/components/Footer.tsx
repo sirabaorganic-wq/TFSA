@@ -84,7 +84,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:rajeshthakur2006@gmail.com"
-                  className="text-[#6B7280] hover:text-[#B8956A] transition-colors duration-150 flex items-center gap-2"
+                  className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
                   aria-label="Email"
                 >
                   <Mail size={16} />
@@ -94,7 +94,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+919116633119"
-                  className="text-[#6B7280] hover:text-[#B8956A] transition-colors duration-150"
+                  className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150"
                   aria-label="Phone"
                 >
                   +91 9116633119
@@ -105,7 +105,7 @@ export function Footer() {
                   href="https://www.linkedin.com/in/rajesh-thakur-entrepreneur/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#6B7280] hover:text-[#B8956A] transition-colors duration-150 flex items-center gap-2"
+                  className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={16} />

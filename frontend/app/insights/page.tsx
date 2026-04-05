@@ -16,7 +16,7 @@ export default function Insights() {
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#FAFAF8] leading-tight mb-6 sm:mb-8">
             The Freedom Startup Architect™ Framework Hub
           </h1>
-          <div className="h-1 w-20 bg-[#B8956A] mb-8 sm:mb-10"></div>
+          <div className="h-1 w-20 bg-[#B68817] mb-8 sm:mb-10"></div>
           <p className="text-[#D1D5DB] text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl">
             Premium strategic frameworks, proprietary methodologies, and thought leadership on founder independence, India market entry strategy, and building truly scalable organizations. Everything you need to architect your startup&apos;s freedom.
           </p>
@@ -44,28 +44,28 @@ export default function Insights() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10">
               <div className="bg-[#F9FAFB] border border-[#E5E7EB] rounded-sm p-6 sm:p-8">
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B8956A]">Model</h3>
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B68817]">Model</h3>
                 <p className="text-[#374151] text-sm sm:text-base leading-relaxed">
                   Founder Architecture Model — designing organizations that scale without founder involvement.
                 </p>
               </div>
               
               <div className="bg-[#F9FAFB] border border-[#E5E7EB] rounded-sm p-6 sm:p-8">
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B8956A]">Momentum</h3>
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B68817]">Momentum</h3>
                 <p className="text-[#374151] text-sm sm:text-base leading-relaxed">
                   GTM and Distribution Architecture — building repeatable, scalable customer acquisition systems.
                 </p>
               </div>
               
               <div className="bg-[#F9FAFB] border border-[#E5E7EB] rounded-sm p-6 sm:p-8">
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B8956A]">Money</h3>
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B68817]">Money</h3>
                 <p className="text-[#374151] text-sm sm:text-base leading-relaxed">
                   Financial Architecture and Revenue Design — aligning finance with strategic growth goals.
                 </p>
               </div>
               
               <div className="bg-[#F9FAFB] border border-[#E5E7EB] rounded-sm p-6 sm:p-8">
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B8956A]">Freedom</h3>
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 text-[#B68817]">Freedom</h3>
                 <p className="text-[#374151] text-sm sm:text-base leading-relaxed">
                   Founder Independence Index — measuring your path to true strategic and operational freedom.
                 </p>
@@ -75,13 +75,13 @@ export default function Insights() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#"
-                className="px-6 py-3 bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md text-center"
+                className="px-6 py-3 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md text-center"
               >
                 Download Full Framework (PDF)
               </a>
               <a 
                 href="/contact"
-                className="px-6 py-3 border border-[#B8956A] text-[#B8956A] rounded-sm font-medium hover:bg-[#B8956A]/10 transition-all duration-150 text-center"
+                className="px-6 py-3 border border-[#B68817] text-[#B68817] rounded-sm font-medium hover:bg-[#B68817]/10 transition-all duration-150 text-center"
               >
                 Schedule a Framework Consultation
               </a>
@@ -109,7 +109,7 @@ export default function Insights() {
               </div>
               <div className="bg-slate-800 rounded-sm p-6">
                 <p className="text-[#9CA3AF] text-sm mb-2">Ideal Target</p>
-                <p className="text-[#B8956A] font-serif text-3xl">25 or Below</p>
+                <p className="text-[#B68817] font-serif text-3xl">25 or Below</p>
               </div>
               <div className="bg-slate-800 rounded-sm p-6">
                 <p className="text-[#9CA3AF] text-sm mb-2">Assessment</p>
@@ -131,7 +131,7 @@ export default function Insights() {
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#FAFAF8] mb-6 sm:mb-8">
             Published & Upcoming Books
           </h2>
-          <div className="h-1 w-20 bg-[#B8956A] mb-12 sm:mb-16"></div>
+          <div className="h-1 w-20 bg-[#B68817] mb-12 sm:mb-16"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
             {/* Published Book */}
@@ -139,7 +139,7 @@ export default function Insights() {
               <div className="bg-gradient-to-br from-[#1F2937] to-[#0F1419] border border-[#374151]/50 rounded-sm p-8 sm:p-10 mb-6 flex-grow flex flex-col">
                 <div className="h-72 bg-gradient-to-br from-[#374151] to-[#1F2937] rounded-sm mb-8 flex items-center justify-center border border-[#374151]">
                   <div className="text-center">
-                    <p className="text-[#B8956A] font-serif text-5xl mb-2">📖</p>
+                    <p className="text-[#B68817] font-serif text-5xl mb-2">📖</p>
                     <p className="text-[#D1D5DB] text-lg font-serif">Book Cover</p>
                   </div>
                 </div>
@@ -150,17 +150,17 @@ export default function Insights() {
                   A comprehensive guide to eliminating founder dependency through organizational architecture, systems design, and execution excellence.
                 </p>
                 <div className="mb-8 space-y-3">
-                  <p className="text-[#B8956A] font-semibold text-sm uppercase tracking-wide">Key Topics:</p>
+                  <p className="text-[#B68817] font-semibold text-sm uppercase tracking-wide">Key Topics:</p>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Diagnosing founder dependency patterns</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Building systems-first organizations</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Leadership team architecture</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Scaling playbooks and execution frameworks</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Diagnosing founder dependency patterns</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Building systems-first organizations</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Leadership team architecture</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Scaling playbooks and execution frameworks</span></li>
                   </ul>
                 </div>
                 <a
                   href="#"
-                  className="w-full text-center px-6 py-3 bg-[#B8956A] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md"
+                  className="w-full text-center px-6 py-3 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-all duration-150 shadow-sm hover:shadow-md"
                 >
                   Download Chapter Preview
                 </a>
@@ -169,13 +169,13 @@ export default function Insights() {
 
             {/* Upcoming Book */}
             <div className="flex flex-col relative">
-              <div className="absolute top-6 right-6 z-10 bg-[#B8956A] text-white text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-wider">
+              <div className="absolute top-6 right-6 z-10 bg-[#B68817] text-white text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-wider">
                 Coming 2026
               </div>
               <div className="bg-gradient-to-br from-[#1F2937] to-[#0F1419] border border-[#374151]/50 rounded-sm p-8 sm:p-10 mb-6 flex-grow flex flex-col">
                 <div className="h-72 bg-gradient-to-br from-[#374151] to-[#1F2937] rounded-sm mb-8 flex items-center justify-center border border-[#374151] opacity-60">
                   <div className="text-center">
-                    <p className="text-[#B8956A] font-serif text-5xl mb-2">📚</p>
+                    <p className="text-[#B68817] font-serif text-5xl mb-2">📚</p>
                     <p className="text-[#6B7280] text-lg font-serif">Coming Soon</p>
                   </div>
                 </div>
@@ -186,17 +186,17 @@ export default function Insights() {
                   Deep insights into India market dynamics, entry strategies, regulatory navigation, and building distribution networks in complex emerging markets.
                 </p>
                 <div className="mb-8 space-y-3">
-                  <p className="text-[#B8956A] font-semibold text-sm uppercase tracking-wide">Expected Topics:</p>
+                  <p className="text-[#B68817] font-semibold text-sm uppercase tracking-wide">Expected Topics:</p>
                   <ul className="space-y-2 text-[#9CA3AF] text-sm">
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Market analysis frameworks</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Regulatory landscape and complexity</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Distribution channel design</span></li>
-                    <li className="flex gap-2"><span className="text-[#B8956A]">→</span><span>Case studies and playbooks</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Market analysis frameworks</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Regulatory landscape and complexity</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Distribution channel design</span></li>
+                    <li className="flex gap-2"><span className="text-[#B68817]">→</span><span>Case studies and playbooks</span></li>
                   </ul>
                 </div>
                 <a
                   href="#"
-                  className="w-full text-center px-6 py-3 border border-[#B8956A] text-[#B8956A] rounded-sm font-medium hover:bg-[#B8956A]/10 transition-all duration-150"
+                  className="w-full text-center px-6 py-3 border border-[#B68817] text-[#B68817] rounded-sm font-medium hover:bg-[#B68817]/10 transition-all duration-150"
                 >
                   Notify Me at Launch
                 </a>
@@ -235,7 +235,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Insight →
               </a>
@@ -260,7 +260,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Framework →
               </a>
@@ -285,7 +285,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Analysis →
               </a>
@@ -310,7 +310,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Strategy →
               </a>
@@ -335,7 +335,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Framework →
               </a>
@@ -360,7 +360,7 @@ export default function Insights() {
               </div>
               <a
                 href="#"
-                className="text-[#B8956A] font-semibold text-sm hover:underline"
+                className="text-[#B68817] font-semibold text-sm hover:underline"
               >
                 Read Full Blueprint →
               </a>
@@ -389,7 +389,7 @@ export default function Insights() {
             />
             <button
               type="submit"
-              className="px-4 sm:px-6 lg:px-8 py-3 bg-[#B8956A] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors"
+              className="px-4 sm:px-6 lg:px-8 py-3 bg-[#B68817] text-[#FAFAF8] rounded-sm font-medium hover:bg-[#A08560] transition-colors"
             >
               Subscribe
             </button>
