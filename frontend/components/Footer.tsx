@@ -33,8 +33,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
-                  About
+                <Link href="/tfsa-framework" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
+                  TFSA Framework
+                </Link>
+              </li>
+              <li>
+                <Link href="/india-expansion" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
+                  India Expansion
                 </Link>
               </li>
               <li>
@@ -43,8 +48,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
-                  How It Works
+                <Link href="/who-we-work-with" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
+                  Who We Work With
                 </Link>
               </li>
             </ul>
@@ -55,8 +60,8 @@ export function Footer() {
             <h4 className="font-medium text-[#FAFAF8] text-sm mb-4">Resources</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/founder" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
-                  Founder
+                <Link href="/about" className="text-[#6B7280] hover:text-[#FAFAF8] transition-colors duration-150">
+                  About us
                 </Link>
               </li>
               <li>
@@ -83,23 +88,23 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:rajeshthakur2006@gmail.com"
+                  href="mailto:thefreedomstartuparchitect@gmail.com"
                   className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
                   aria-label="Email"
                 >
                   <Mail size={16} />
-                  rajeshthakur2006@gmail.com
+                  thefreedomstartuparchitect@gmail.com
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
-                  href="tel:+919116633119"
+                  href="tel:+918882555990"
                   className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150"
                   aria-label="Phone"
                 >
-                  +91 9116633119
+                  +91 8882555990
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://www.linkedin.com/in/rajesh-thakur-entrepreneur/"

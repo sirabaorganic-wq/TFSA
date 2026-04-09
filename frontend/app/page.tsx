@@ -1,262 +1,562 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { PremiumButton, PremiumButtonInline } from '@/components/PremiumButton'
-import { PremiumCard, FrameworkShowcase, SectionCard } from '@/components/PremiumCard'
+import Image from 'next/image'
+import { PremiumButton } from '@/components/PremiumButton'
+import { PremiumCard, FrameworkShowcase, SectionCard, TestimonialCard, SuccessStoryCard } from '@/components/PremiumCard'
 import { SectionDivider } from '@/components/SectionDivider'
 
 export const metadata: Metadata = {
-  title: 'The Freedom Startup Architect™ | TFSA Consulting',
-  description: 'Strategic architecture consulting for startup founders. We eliminate founder dependency and architect sustainable growth systems for India market entry and scale.',
-  openGraph: {
-    title: 'The Freedom Startup Architect™ | TFSA Consulting',
-    description: 'Strategic architecture consulting for startup founders.',
-    type: 'website',
-  },
+  title: 'TFSA Global | India Market Entry & Scalable Growth',
+  description: 'We architect and execute market entry — not just strategy. For global companies expanding into India.',
 }
 
 export default function Home() {
   return (
     <div className="bg-[#0F1419]">
-      {/* Hero Section */}
-      <section className="bg-[#0F1419] min-h-screen flex items-center">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-center">
-            {/* Left: Editorial Text Block (70% width equivalent) */}
-            <div className="lg:col-span-2">
-              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#FAFAF8] leading-tight mb-2">
-                Design Your Business.
-              </h1>
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#B68817] leading-tight mb-8 sm:mb-10">
-                Build Your Freedom.
+      {/* 1. HERO SECTION */}
+      <section className="bg-gradient-to-b from-[#0F1419] to-[#1a222a] min-h-screen flex items-center pt-20">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#FAFAF8] leading-tight mb-6">
+              India Market Entry &amp; <span className="text-[#B68817]">Scalable Growth</span>
+              <br />
+              <span className="text-4xl sm:text-5xl md:text-6xl text-[#D1D5DB]">for Global Companies</span>
+            </h1>
+            <h2 className="text-[#FAFAF8] text-xl sm:text-2xl font-medium tracking-wide mb-4">
+              We architect and execute market entry &mdash; not just strategy.
+            </h2>
+            <p className="text-[#9CA3AF] text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
+              So you don&apos;t lose time, capital, or momentum.<br />
+              <span className="text-[#D1D5DB] font-semibold mt-4 block">Most companies don&apos;t fail in India because of product. They fail because of execution.</span>
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <PremiumButton href="/contact" className="text-center w-full sm:w-auto">
+                Start India Entry Assessment
+              </PremiumButton>
+              <PremiumButton href="/india-expansion" variant="secondary" className="text-center w-full sm:w-auto">
+                Explore Our Approach
+              </PremiumButton>
+            </div>
+
+            <div className="mt-12 text-[#9CA3AF] text-sm uppercase tracking-widest font-semibold flex flex-wrap justify-center gap-4 sm:gap-8">
+              <span>Market Entry</span>
+              <span className="hidden sm:inline">•</span>
+              <span>GTM</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Distribution</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="text-[#B68817]">Execution</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="thin" />
+
+      {/* 2. CORE INSIGHT */}
+      <section className="bg-[#FAFAF8] py-20 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-6">
+            India is not a market-entry problem.
+          </h2>
+          <h3 className="font-serif text-2xl md:text-4xl font-bold text-[#B68817] mb-8">
+            It&apos;s an execution architecture problem.
+          </h3>
+          <p className="text-[#374151] text-xl md:text-2xl leading-relaxed">
+            Most companies enter India with strategy.
+            <br />
+            <strong>But without structured execution, growth breaks.</strong>
+          </p>
+        </div>
+      </section>
+
+      <SectionDivider variant="thin" />
+
+      {/* 3. THE PROBLEM */}
+      <section className="bg-[#1F2937] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-6">
+                India is a high-opportunity market.
               </h2>
-              <p className="text-[#D1D5DB] text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                Strategic architecture for founders who want to build lasting, independent, scalable businesses. From market entry to execution to freedom.
+              <p className="text-xl text-[#B68817] font-semibold mb-8">
+                But execution is where companies fail.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <PremiumButton href="/about" className="text-center">
-                  Explore Our Approach
-                </PremiumButton>
-                <PremiumButton href="/contact" variant="secondary" className="text-center">
-                  Book a Strategic Call
-                </PremiumButton>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start text-[#D1D5DB] text-lg">
+                  <span className="text-[#B68817] mr-3 mt-1">→</span> Misaligned positioning
+                </li>
+                <li className="flex items-start text-[#D1D5DB] text-lg">
+                  <span className="text-[#B68817] mr-3 mt-1">→</span> Ineffective GTM strategies
+                </li>
+                <li className="flex items-start text-[#D1D5DB] text-lg">
+                  <span className="text-[#B68817] mr-3 mt-1">→</span> Fragmented distribution systems
+                </li>
+                <li className="flex items-start text-[#D1D5DB] text-lg">
+                  <span className="text-[#B68817] mr-3 mt-1">→</span> Lack of on-ground execution
+                </li>
+              </ul>
+              <div className="bg-[#B68817]/10 border-l-4 border-[#B68817] p-6">
+                <p className="text-[#FAFAF8] font-medium text-lg">
+                  Result: Slow traction, high burn, and missed market potential.
+                </p>
               </div>
             </div>
 
-            {/* Right: Premium Framework Graphic (Abstract Lines) */}
-            <div className="lg:col-span-1 flex items-center justify-center h-80 lg:h-full">
-              <svg className="w-full h-full max-w-sm" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                {/* Abstract framework lines - premium geometric design */}
-                <defs>
-                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#B68817', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#4B9B8E', stopOpacity: 0.6 }} />
-                  </linearGradient>
-                </defs>
-
-                {/* Base foundation structure */}
-                <path d="M 50 350 L 350 350" stroke="#374151" strokeWidth="2" fill="none" />
-
-                {/* Vertical pillars */}
-                <path d="M 100 350 L 100 100" stroke="#B68817" strokeWidth="3" opacity="0.8" />
-                <path d="M 200 350 L 200 80" stroke="url(#grad1)" strokeWidth="3" opacity="0.9" />
-                <path d="M 300 350 L 300 120" stroke="#4B9B8E" strokeWidth="3" opacity="0.7" />
-
-                {/* Horizontal layers */}
-                <path d="M 50 280 L 350 280" stroke="#1F2937" strokeWidth="1" opacity="0.5" strokeDasharray="5,5" />
-                <path d="M 50 210 L 350 210" stroke="#1F2937" strokeWidth="1" opacity="0.5" strokeDasharray="5,5" />
-                <path d="M 50 140 L 350 140" stroke="#1F2937" strokeWidth="1" opacity="0.5" strokeDasharray="5,5" />
-
-                {/* Top capstone */}
-                <circle cx="200" cy="50" r="15" stroke="#B68817" strokeWidth="2" fill="none" />
-                <path d="M 200 35 L 200 20" stroke="#B68817" strokeWidth="2" />
-
-                {/* Connecting lines for network effect */}
-                <path d="M 100 200 L 200 150" stroke="#4B9B8E" strokeWidth="1.5" opacity="0.4" />
-                <path d="M 200 150 L 300 180" stroke="#4B9B8E" strokeWidth="1.5" opacity="0.4" />
-                <path d="M 100 120 L 300 150" stroke="#B68817" strokeWidth="1" opacity="0.3" />
-              </svg>
+            <div className="relative">
+              <div className="aspect-square rounded-sm border border-[#374151] bg-[#0F1419] overflow-hidden relative">
+                <Image
+                  src="/indiaopportunity.png"
+                  alt="India Opportunity"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. THE GAP */}
+      <section className="bg-[#0F1419] py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-6">
+              The Execution Gap
+            </h2>
+            <p className="text-[#D1D5DB] text-xl">
+              Why current approaches fail in the Indian market.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-[#1F2937] border border-[#374151] p-8 rounded-sm">
+              <h3 className="text-xl font-bold text-[#FAFAF8] mb-4 border-b border-[#374151] pb-4">Consultants</h3>
+              <p className="text-[#B68817] font-semibold mb-4">Strategy without execution</p>
+              <p className="text-[#9CA3AF]">They provide thick reports and high-level advice, but leave you to figure out the messy reality of on-ground implementation.</p>
+            </div>
+
+            <div className="bg-[#1F2937] border border-[#374151] p-8 rounded-sm">
+              <h3 className="text-xl font-bold text-[#FAFAF8] mb-4 border-b border-[#374151] pb-4">Agencies</h3>
+              <p className="text-[#B68817] font-semibold mb-4">Execution without structure</p>
+              <p className="text-[#9CA3AF]">They execute specific tasks (marketing, PR) but lack the overarching business architecture and strategic alignment.</p>
+            </div>
+
+            <div className="bg-[#1F2937] border border-[#374151] p-8 rounded-sm">
+              <h3 className="text-xl font-bold text-[#FAFAF8] mb-4 border-b border-[#374151] pb-4">Internal Teams</h3>
+              <p className="text-[#B68817] font-semibold mb-4">No India-specific expertise</p>
+              <p className="text-[#9CA3AF]">Your core team is exceptionally talented but lacks deeply rooted market insight and execution frameworks specific to India.</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-serif font-bold text-[#FAFAF8] bg-[#B68817] inline-block px-8 py-4 rounded-sm shadow-lg">
+              No one owns end-to-end execution.
+            </p>
           </div>
         </div>
       </section>
 
       <SectionDivider variant="thin" />
 
-      {/* Problem Section */}
-      <section className="bg-[#FAFAF8] py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#0F1419] mb-4 sm:mb-6">
-            The Founder Dependency Problem
-          </h2>
-          <p className="text-[#1F2937] text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-            Most startups grow but don&apos;t scale. They depend entirely on their founder for decisions, execution, and vision. When scaling hits, everything breaks.
-          </p>
-          <p className="text-[#374151] text-lg leading-relaxed">
-            Market entry, especially in India, adds complexity: navigating regulations, building distribution, understanding local dynamics, and maintaining strategic clarity—all while building a company that works without you.
-          </p>
-        </div>
-      </section>
+      {/* 5. THE TFSA GLOBAL SOLUTION */}
+      <section className="bg-[#FAFAF8] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-6">
+              We Architect and Execute Market Entry
+            </h2>
+            <p className="text-[#374151] text-xl max-w-3xl mx-auto">
+              At TFSA Global, we design and implement the complete business architecture required for successful India expansion.
+            </p>
+          </div>
 
-      <SectionDivider variant="thin" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-[#0F1419] rounded-full flex items-center justify-center mx-auto mb-6 text-[#B68817]">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-[#0F1419] mb-4">Market Entry</h3>
+              <p className="text-[#4B5563]">Structural framing, localization, and regulatory alignment engineered for sustainable traction.</p>
+            </div>
 
-      {/* Solution Section */}
-      <section className="bg-[#0F1419] py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#FAFAF8] mb-6 sm:mb-8">
-            How TFSA Bridges Strategy and Execution
-          </h2>
-          <div className="space-y-5 sm:space-y-6">
-            <div>
-              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We architect, we don&apos;t advise.</h3>
-              <p className="text-[#D1D5DB] text-lg leading-relaxed">
-                Every recommendation is operational, executable, and tied to business outcomes.
-              </p>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-[#0F1419] rounded-full flex items-center justify-center mx-auto mb-6 text-[#B68817]">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-[#0F1419] mb-4">Business Development</h3>
+              <p className="text-[#4B5563]">Strategic partnerships, local vendor ecosystems, and key enterprise account penetration.</p>
             </div>
-            <div>
-              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We eliminate founder dependency through systems.</h3>
-              <p className="text-[#D1D5DB] text-lg leading-relaxed">
-                You remain the visionary. We build the structure that lets your team execute without you.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-[#B68817] font-semibold text-lg mb-2">We specialize in market entry and scale.</h3>
-              <p className="text-[#D1D5DB] text-lg leading-relaxed">
-                India market complexity, GTM strategy, and execution architecture are our core domains.
-              </p>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-[#0F1419] rounded-full flex items-center justify-center mx-auto mb-6 text-[#B68817]">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-[#0F1419] mb-4">Sales &amp; Growth</h3>
+              <p className="text-[#4B5563]">Repeatable go-to-market systems and scalable distribution networks delivering revenue momentum.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <SectionDivider variant="thin" />
+      {/* 6. BRIDGE SECTION TO TFSA FRAMEWORK & FROM ARCHITECTURE TO EXPANSION */}
+      <section className="bg-[#1F2937] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-[#B68817] font-semibold tracking-wider uppercase mb-2">From Architecture to Expansion</p>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-8">
+                Built on Proven Startup Architecture
+              </h2>
 
-      {/* 3-Phase Architecture Model */}
-      <section className="bg-[#FAFAF8] py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#0F1419] mb-8 sm:mb-12 text-center">
-            The TFSA 3-Phase Architecture
-          </h2>
+              <div className="space-y-6 text-[#D1D5DB] text-lg">
+                <p>
+                  <strong className="text-white block mb-1">What we used to do:</strong>
+                  We built the architecture, systems, business clarity, and operating foundations for startups looking to scale.
+                </p>
+                <p>
+                  <strong className="text-white block mb-1">What we are doing now:</strong>
+                  We are actively applying those principles to India market entry and commercial execution for global companies.
+                </p>
+                <p>
+                  Before global expansion, businesses must be structurally strong. Our approach is powered by the foundational <strong className="text-white">TFSA Framework</strong>:
+                </p>
+              </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Phase 1 */}
-            <div className="bg-white border border-[#E5E7EB] rounded-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F1419] mb-3 sm:mb-4">Market Entry Architecture</h3>
-              <p className="text-[#374151] text-sm sm:text-base mb-5 sm:mb-6">
-                Understand your market, position your offering, design your GTM strategy.
-              </p>
-              <ul className="space-y-2 text-sm text-[#374151]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Market analysis and competitive positioning</span>
+              <ul className="mt-8 space-y-4">
+                <li className="flex items-start">
+                  <span className="bg-[#B68817] text-white text-xs px-2 py-1 rounded-sm mr-4 mt-1 font-bold">MODEL</span>
+                  <span className="text-[#FAFAF8]">(Architecture) &rarr; <span className="text-[#9CA3AF]">Business clarity &amp; unit economics</span></span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>India-specific regulatory and operational setup</span>
+                <li className="flex items-start">
+                  <span className="bg-[#B68817] text-white text-xs px-2 py-1 rounded-sm mr-4 mt-1 font-bold">MOMENTUM</span>
+                  <span className="text-[#FAFAF8]">(Systems) &rarr; <span className="text-[#9CA3AF]">Execution &amp; operations</span></span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Initial org structure and team design</span>
+                <li className="flex items-start">
+                  <span className="bg-[#B68817] text-white text-xs px-2 py-1 rounded-sm mr-4 mt-1 font-bold">MONEY</span>
+                  <span className="text-[#FAFAF8]">(Capital) &rarr; <span className="text-[#9CA3AF]">Scale &amp; investor readiness</span></span>
                 </li>
               </ul>
+
+              <div className="mt-10">
+                <Link href="/tfsa-framework" className="inline-flex items-center text-[#B68817] hover:text-[#FAFAF8] font-bold text-lg transition-colors">
+                  Explore TFSA Framework <span className="ml-2">&rarr;</span>
+                </Link>
+              </div>
             </div>
 
-            {/* Phase 2 */}
-            <div className="bg-white border border-[#E5E7EB] rounded-sm p-8 hover:shadow-md transition-shadow duration-300">
-              <h3 className="font-serif text-2xl font-bold text-[#0F1419] mb-4">GTM & Distribution Design</h3>
-              <p className="text-[#374151] mb-6">
-                Build repeatable, scalable distribution channels and go-to-market systems.
+            <div className="bg-[#0F1419] p-8 md:p-12 border border-[#374151] rounded-sm">
+              <h3 className="font-serif text-2xl font-bold text-white mb-6 border-b border-[#374151] pb-4">The Evolution</h3>
+              <p className="text-[#9CA3AF] mb-8 italic">
+                "TFSA Framework came first. TFSA Global is the applied execution layer for India expansion."
               </p>
-              <ul className="space-y-2 text-sm text-[#374151]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Distribution strategy and channel design</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Sales and customer acquisition systems</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Leadership team and delegation framework</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Phase 3 */}
-            <div className="bg-white border border-[#E5E7EB] rounded-sm p-8 hover:shadow-md transition-shadow duration-300">
-              <h3 className="font-serif text-2xl font-bold text-[#0F1419] mb-4">Execution & Scale</h3>
-              <p className="text-[#374151] mb-6">
-                Eliminate founder dependency and build systems that scale without breaking.
-              </p>
-              <ul className="space-y-2 text-sm text-[#374151]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Execution systems and decision frameworks</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Team scaling and operational structure</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#B68817] font-bold">•</span>
-                  <span>Founder freedom and strategic positioning</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider variant="thin" />
-
-      {/* Framework Teaser */}
-      <section className="bg-[#0F1419] py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <FrameworkShowcase
-            title="The Founder Architecture Framework™"
-            description="Rajesh Thakur&apos;s proprietary framework for building founder-independent, scalable startups."
-            ctaLabel="Explore the Framework"
-            ctaHref="/insights"
-          >
-            <div className="space-y-4">
-              <p className="text-[#D1D5DB] text-base">
-                A structured approach to startup architecture covering:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B68817]">Model:</strong> Founder Architecture Model
+              <div className="space-y-6">
+                <div className="relative pl-6 border-l-2 border-[#374151]">
+                  <div className="absolute w-3 h-3 bg-[#374151] rounded-full -left-[7px] top-1"></div>
+                  <h4 className="text-white font-bold">Foundation</h4>
+                  <p className="text-sm text-[#6B7280]">Startup Architecture Systems</p>
                 </div>
-                <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B68817]">Momentum:</strong> GTM & Distribution
+                <div className="relative pl-6 border-l-2 border-[#B68817]">
+                  <div className="absolute w-3 h-3 bg-[#B68817] rounded-full -left-[7px] top-1"></div>
+                  <h4 className="text-white font-bold">Application</h4>
+                  <p className="text-sm text-[#6B7280]">India Expansion Execution</p>
                 </div>
-                <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B68817]">Money:</strong> Financial Architecture
-                </div>
-                <div className="text-sm text-[#9CA3AF]">
-                  <strong className="text-[#B68817]">Freedom:</strong> Founder Independence
+                <div className="relative pl-6 border-l-2 border-[#4B9B8E] border-dashed">
+                  <div className="absolute w-3 h-3 bg-[#4B9B8E] rounded-full -left-[7px] top-1"></div>
+                  <h4 className="text-white font-bold">Scale</h4>
+                  <p className="text-sm text-[#6B7280]">Scalable Global Growth</p>
                 </div>
               </div>
             </div>
-          </FrameworkShowcase>
+          </div>
         </div>
       </section>
 
       <SectionDivider variant="thin" />
 
-      {/* Closing CTA */}
-      <section className="bg-[#0F1419] py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#FAFAF8] mb-6">
-            Ready to Transform Your Startup?
-          </h2>
-          <p className="text-[#D1D5DB] text-lg mb-8">
-            Let&apos;s discuss your growth challenges and explore how TFSA can help you build a truly independent, scalable business.
-          </p>
-          <PremiumButton href="/contact" className="justify-center">
-            Book a Strategic Consultation
-          </PremiumButton>
+      {/* 7. HOW IT WORKS */}
+      <section className="bg-[#0F1419] py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-6">
+              A Structured Approach to India Expansion
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#1F2937] p-10 rounded-sm border-t-4 border-[#B68817]">
+              <div className="text-4xl font-bold text-[#374151] mb-4">01</div>
+              <h3 className="text-2xl font-bold text-white mb-4">Diagnose</h3>
+              <p className="text-[#9CA3AF]">
+                Market validation, positioning, and risk mapping. We analyze the terrain before committing capital.
+              </p>
+            </div>
+
+            <div className="bg-[#1F2937] p-10 rounded-sm border-t-4 border-[#B68817]">
+              <div className="text-4xl font-bold text-[#374151] mb-4">02</div>
+              <h3 className="text-2xl font-bold text-white mb-4">Architect</h3>
+              <p className="text-[#9CA3AF]">
+                GTM systems, distribution design, and pricing alignment. We build the structural blueprint.
+              </p>
+            </div>
+
+            <div className="bg-[#1F2937] p-10 rounded-sm border-t-4 border-[#B68817]">
+              <div className="text-4xl font-bold text-[#374151] mb-4">03</div>
+              <h3 className="text-2xl font-bold text-white mb-4">Execute &amp; Scale</h3>
+              <p className="text-[#9CA3AF]">
+                Pilot execution, traction validation, and wide-scale optimization. We drive the growth momentum.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-2xl font-serif text-[#D1D5DB] italic">
+              No guesswork. Only structured execution.
+            </p>
+          </div>
         </div>
       </section>
+
+      {/* 8. WHAT WE DESIGN */}
+      <section className="bg-[#FAFAF8] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-6">
+                We don&apos;t just advise.
+                <br />
+                <span className="text-[#B68817]">We build execution systems.</span>
+              </h2>
+            </div>
+
+            <div>
+              <div className="bg-white p-8 border border-[#E5E7EB] shadow-sm rounded-sm">
+                <ul className="space-y-6">
+                  <li className="flex items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#1F2937] flex items-center justify-center mr-4 text-white">✓</div>
+                    <span className="text-xl font-medium text-[#0F1419]">Market entry architecture</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#1F2937] flex items-center justify-center mr-4 text-white">✓</div>
+                    <span className="text-xl font-medium text-[#0F1419]">GTM &amp; distribution systems</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#1F2937] flex items-center justify-center mr-4 text-white">✓</div>
+                    <span className="text-xl font-medium text-[#0F1419]">Business development engines</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#1F2937] flex items-center justify-center mr-4 text-white">✓</div>
+                    <span className="text-xl font-medium text-[#0F1419]">Sales &amp; growth execution</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. BEFORE VS AFTER TFSA */}
+      <section className="bg-[#1F2937] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-center text-[#FAFAF8] mb-16">
+            The Execution Impact
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Without TFSA */}
+            <div className="bg-[#0F1419] border border-[#EF4444]/30 rounded-sm p-10">
+              <h3 className="text-2xl font-bold text-[#EF4444] mb-8 pb-4 border-b border-[#374151]">Without TFSA</h3>
+              <ul className="space-y-6">
+                <li className="flex items-center text-[#9CA3AF] text-lg">
+                  <span className="mr-4 text-[#EF4444]">×</span> Trial &amp; error positioning
+                </li>
+                <li className="flex items-center text-[#9CA3AF] text-lg">
+                  <span className="mr-4 text-[#EF4444]">×</span> Slow, painful traction
+                </li>
+                <li className="flex items-center text-[#9CA3AF] text-lg">
+                  <span className="mr-4 text-[#EF4444]">×</span> High cash burn rate
+                </li>
+                <li className="flex items-center text-[#9CA3AF] text-lg">
+                  <span className="mr-4 text-[#EF4444]">×</span> Fragmented, chaotic execution
+                </li>
+              </ul>
+            </div>
+
+            {/* With TFSA */}
+            <div className="bg-[#0F1419] border border-[#4B9B8E]/50 rounded-sm p-10 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#4B9B8E] opacity-5 rounded-bl-full"></div>
+              <h3 className="text-2xl font-bold text-[#4B9B8E] mb-8 pb-4 border-b border-[#374151]">With TFSA</h3>
+              <ul className="space-y-6">
+                <li className="flex items-center text-[#FAFAF8] text-lg">
+                  <span className="mr-4 text-[#4B9B8E] font-bold">✓</span> Structured, de-risked entry
+                </li>
+                <li className="flex items-center text-[#FAFAF8] text-lg">
+                  <span className="mr-4 text-[#4B9B8E] font-bold">✓</span> Faster market adoption
+                </li>
+                <li className="flex items-center text-[#FAFAF8] text-lg">
+                  <span className="mr-4 text-[#4B9B8E] font-bold">✓</span> Capital-optimized execution
+                </li>
+                <li className="flex items-center text-[#FAFAF8] text-lg">
+                  <span className="mr-4 text-[#4B9B8E] font-bold">✓</span> Scalable growth system
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="thin" />
+
+      {/* 10. TESTIMONIALS */}
+      <section className="bg-[#FAFAF8] py-20 md:py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-4">
+              What Founders Say
+            </h2>
+            <p className="text-[#4B5563] text-lg">Endorsements built through structured execution.</p>
+          </div>
+
+          <div className="flex gap-6 overflow-x-auto pb-8 snap-x flex-nowrap hide-scrollbars">
+            <div className="min-w-[300px] md:min-w-[400px] snap-center">
+              <TestimonialCard
+                quote="Pending testimonial content focusing on execution and market entry architecture."
+                name="TBD"
+                title="Founder / CEO"
+                company="Global Enterprise"
+              />
+            </div>
+            <div className="min-w-[300px] md:min-w-[400px] snap-center">
+              <TestimonialCard
+                quote="Pending testimonial content focusing on the transition from strategy consulting to actual on-ground metrics."
+                name="TBD"
+                title="Managing Director"
+                company="expanding into India"
+              />
+            </div>
+            <div className="min-w-[300px] md:min-w-[400px] snap-center">
+              <TestimonialCard
+                quote="Pending testimonial content focusing on the elimination of founder dependency using the TFSA Framework."
+                name="TBD"
+                title="Founding Partner"
+                company="Growth Stage Startup"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. CLIENT SUCCESS STORIES */}
+      <section className="bg-[#0F1419] py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-4">
+              Real Execution. Real Outcomes.
+            </h2>
+            <p className="text-[#9CA3AF] text-lg">How we architected market entry and growth for 6 distinct businesses.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <SuccessStoryCard
+                key={i}
+                clientName="Client Name Placeholder"
+                industry="Industry / Sector"
+                challenge="Brief overview of the execution bottleneck or market entry risk they were facing before TFSA."
+                solution="The specific architecture and GTM systems we built and implemented on the ground."
+                outcome="The quantifiable result, expanded distribution, or acquired revenue milestone."
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="thin" />
+
+      {/* 12. PROOF / APPLICATION */}
+      <section className="bg-[#1F2937] py-20 md:py-24 border-y border-[#374151]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-6">
+            Built through real execution
+          </h2>
+          <p className="text-[#D1D5DB] text-lg mb-10 max-w-2xl mx-auto">
+            TFSA architecture has been applied across diverse, complex sectors:
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+            <span className="px-6 py-3 bg-[#0F1419] text-[#B68817] rounded-sm font-medium border border-[#374151]">Business consulting &amp; advisory</span>
+            <span className="px-6 py-3 bg-[#0F1419] text-[#B68817] rounded-sm font-medium border border-[#374151]">Logistics &amp; operations businesses</span>
+            <span className="px-6 py-3 bg-[#0F1419] text-[#B68817] rounded-sm font-medium border border-[#374151]">Digital and infrastructure ventures</span>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. WHO THIS IS FOR */}
+      <section className="bg-[#FAFAF8] py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-16">
+            Who This Is For
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="p-8 border-b-4 border border-[#E5E7EB] border-b-[#B68817] bg-white rounded-sm">
+              <h3 className="font-bold text-lg text-[#0F1419]">Global Companies</h3>
+              <p className="text-sm text-[#4B5563] mt-2">Entering the complex Indian market</p>
+            </div>
+            <div className="p-8 border-b-4 border border-[#E5E7EB] border-b-[#B68817] bg-white rounded-sm">
+              <h3 className="font-bold text-lg text-[#0F1419]">Startups</h3>
+              <p className="text-sm text-[#4B5563] mt-2">Expanding into new, unfamiliar markets</p>
+            </div>
+            <div className="p-8 border-b-4 border border-[#E5E7EB] border-b-[#B68817] bg-white rounded-sm">
+              <h3 className="font-bold text-lg text-[#0F1419]">Businesses</h3>
+              <p className="text-sm text-[#4B5563] mt-2">Facing critical execution challenges</p>
+            </div>
+            <div className="p-8 border-b-4 border border-[#E5E7EB] border-b-[#B68817] bg-white rounded-sm">
+              <h3 className="font-bold text-lg text-[#0F1419]">Founders</h3>
+              <p className="text-sm text-[#4B5563] mt-2">Scaling, but lacking operational structure</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 14. FINAL CTA */}
+      <section className="bg-gradient-to-t from-[#0F1419] to-[#1a222a] py-24 md:py-40">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold text-[#FAFAF8] mb-6">
+            Don&apos;t enter India through trial and error.
+          </h2>
+          <p className="text-2xl text-[#B68817] font-medium mb-12">
+            Architect it right from the start.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <PremiumButton href="/services" className="px-8 py-4 text-center justify-center">
+              Phase 1 — Market Entry Architecture
+            </PremiumButton>
+            <PremiumButton href="/contact" variant="secondary" className="px-8 py-4 text-center justify-center">
+              Book Strategy Call
+            </PremiumButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Custom styles for hide scrollbar class used in testimonials */}
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        .hide-scrollbars::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbars {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}} />
     </div>
   )
 }

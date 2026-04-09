@@ -9,10 +9,11 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: 'About', href: '/about' },
+    { label: 'TFSA Framework', href: '/tfsa-framework' },
+    { label: 'India Expansion', href: '/india-expansion' },
     { label: 'Services', href: '/services' },
-    { label: 'How It Works', href: '/how-it-works' },
-    { label: 'Founder', href: '/founder' },
+    { label: 'Who We Work With', href: '/who-we-work-with' },
+    { label: 'About', href: '/about' },
     { label: 'Insights', href: '/insights' },
     { label: 'FAQ', href: '/faq' },
   ]
@@ -22,18 +23,18 @@ export function Header() {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200 flex-shrink-0"
             title="Design Your Business. Build Your Freedom"
           >
-            <Image 
-              src="/tfsa-logo.png" 
-              alt="The Freedom Startup Architect™ Logo" 
-              width={140}
-              height={50}
+            <Image
+              src="/tfsa-logo.png"
+              alt="The Freedom Startup Architect™ Logo"
+              width={220}
+              height={80}
               priority
-              className="h-8 sm:h-10 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </Link>
 
