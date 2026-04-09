@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -25,17 +24,58 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200 flex-shrink-0"
+            className="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200 flex-shrink-0 group"
             title="Design Your Business. Build Your Freedom"
           >
-            <Image
-              src="/tfsa-logo.png"
-              alt="The Freedom Startup Architect™ Logo"
-              width={220}
-              height={80}
-              priority
-              className="h-12 sm:h-16 w-auto"
-            />
+            {/* Compass / Building Icon — matches the logo mark */}
+            <svg
+              width="38"
+              height="38"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-shrink-0"
+              aria-hidden="true"
+            >
+              {/* Buildings / columns */}
+              <rect x="20" y="55" width="10" height="28" rx="1" fill="#FAFAF8" />
+              <rect x="33" y="45" width="10" height="38" rx="1" fill="#FAFAF8" />
+              <rect x="46" y="38" width="10" height="45" rx="1" fill="#FAFAF8" />
+              <rect x="59" y="45" width="10" height="38" rx="1" fill="#FAFAF8" />
+              <rect x="72" y="55" width="10" height="28" rx="1" fill="#FAFAF8" />
+              {/* Book / base arc */}
+              <path d="M14 83 Q50 95 86 83" stroke="#FAFAF8" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+              {/* Compass arrow */}
+              <line x1="50" y1="33" x2="50" y2="10" stroke="#C9973A" strokeWidth="3" strokeLinecap="round" />
+              <polygon points="50,4 46,14 54,14" fill="#C9973A" />
+              {/* Compass center diamond */}
+              <rect x="46" y="33" width="8" height="8" rx="1" fill="#C9973A" transform="rotate(45 50 37)" />
+            </svg>
+
+            {/* Vertical divider */}
+            <div className="w-px h-10 bg-[#FAFAF8]/25 mx-1 flex-shrink-0" aria-hidden="true" />
+
+            {/* Text mark */}
+            <div className="flex flex-col leading-none select-none">
+              <span
+                style={{ fontWeight: 300, letterSpacing: '0.12em', fontSize: '0.65rem' }}
+                className="text-[#FAFAF8]/70 uppercase tracking-widest"
+              >
+                The
+              </span>
+              <span
+                style={{ fontWeight: 800, letterSpacing: '0.08em', fontSize: '1.15rem', lineHeight: 1 }}
+                className="text-[#FAFAF8] uppercase"
+              >
+                FREEDOM
+              </span>
+              <span
+                style={{ fontWeight: 400, letterSpacing: '0.06em', fontSize: '0.62rem' }}
+                className="text-[#FAFAF8]/70 uppercase tracking-wider"
+              >
+                Startup Architect
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
