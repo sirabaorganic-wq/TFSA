@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { PremiumButton } from '@/components/PremiumButton'
 import { PremiumCard, FrameworkShowcase, SectionCard, TestimonialCard, SuccessStoryCard } from '@/components/PremiumCard'
 import { SectionDivider } from '@/components/SectionDivider'
+import { testimonials, successStories } from '@/lib/proof-data'
 
 export const metadata: Metadata = {
   title: 'TFSA Global | India Market Entry & Scalable Growth',
@@ -416,40 +417,41 @@ export default function Home() {
       <SectionDivider variant="thin" />
 
       {/* 10. TESTIMONIALS */}
-      <section className="bg-[#FAFAF8] py-20 md:py-32 overflow-hidden">
+      <section className="bg-[#FAFAF8] py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">Client Voice</p>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#0F1419] mb-4">
-              What Founders Say
+              What Founders & Operators Say
             </h2>
-            <p className="text-[#4B5563] text-lg">Endorsements built through structured execution.</p>
+            <p className="text-[#4B5563] text-lg max-w-2xl mx-auto">From architecture to execution — the voices of those who went through it.</p>
           </div>
 
-          <div className="flex gap-6 overflow-x-auto pb-8 snap-x flex-nowrap hide-scrollbars">
-            <div className="min-w-[300px] md:min-w-[400px] snap-center">
+          {/* Featured testimonial — large format */}
+          <div className="mb-8">
+            <TestimonialCard
+              quote={testimonials[1].quote}
+              name={testimonials[1].name}
+              title={testimonials[1].title}
+              company={testimonials[1].company}
+              engagementType={testimonials[1].engagementType}
+              variant="light"
+            />
+          </div>
+
+          {/* Secondary testimonials — 3-column grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[testimonials[0], testimonials[2], testimonials[3]].map((t) => (
               <TestimonialCard
-                quote="Pending testimonial content focusing on execution and market entry architecture."
-                name="TBD"
-                title="Founder / CEO"
-                company="Global Enterprise"
+                key={t.id}
+                quote={t.quote}
+                name={t.name}
+                title={t.title}
+                company={t.company}
+                engagementType={t.engagementType}
+                variant="light"
               />
-            </div>
-            <div className="min-w-[300px] md:min-w-[400px] snap-center">
-              <TestimonialCard
-                quote="Pending testimonial content focusing on the transition from strategy consulting to actual on-ground metrics."
-                name="TBD"
-                title="Managing Director"
-                company="expanding into India"
-              />
-            </div>
-            <div className="min-w-[300px] md:min-w-[400px] snap-center">
-              <TestimonialCard
-                quote="Pending testimonial content focusing on the elimination of founder dependency using the TFSA Framework."
-                name="TBD"
-                title="Founding Partner"
-                company="Growth Stage Startup"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -458,21 +460,25 @@ export default function Home() {
       <section className="bg-[#0F1419] py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-16">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">Selected Engagements</p>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-4">
               Real Execution. Real Outcomes.
             </h2>
-            <p className="text-[#9CA3AF] text-lg">How we architected market entry and growth for 6 distinct businesses.</p>
+            <p className="text-[#9CA3AF] text-lg">Six distinct business contexts. One consistent methodology. Structured architecture over trial and error.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {successStories.map((story) => (
               <SuccessStoryCard
-                key={i}
-                clientName="Client Name Placeholder"
-                industry="Industry / Sector"
-                challenge="Brief overview of the execution bottleneck or market entry risk they were facing before TFSA."
-                solution="The specific architecture and GTM systems we built and implemented on the ground."
-                outcome="The quantifiable result, expanded distribution, or acquired revenue milestone."
+                key={story.id}
+                clientRef={story.clientRef}
+                industry={story.industry}
+                sector={story.sector}
+                challenge={story.challenge}
+                solution={story.solution}
+                outcome={story.outcome}
+                tag={story.tag}
+                comingSoon={story.comingSoon}
               />
             ))}
           </div>
@@ -546,17 +552,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Custom styles for hide scrollbar class used in testimonials */}
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        .hide-scrollbars::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbars {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}} />
     </div>
   )
 }

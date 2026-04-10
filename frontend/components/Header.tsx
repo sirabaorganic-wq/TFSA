@@ -28,28 +28,27 @@ export function Header() {
             title="Design Your Business. Build Your Freedom"
           >
             {/* Compass / Building Icon — matches the logo mark */}
-            <svg
-              width="38"
-              height="38"
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="flex-shrink-0"
-              aria-hidden="true"
-            >
-              {/* Buildings / columns */}
-              <rect x="20" y="55" width="10" height="28" rx="1" fill="#FAFAF8" />
-              <rect x="33" y="45" width="10" height="38" rx="1" fill="#FAFAF8" />
-              <rect x="46" y="38" width="10" height="45" rx="1" fill="#FAFAF8" />
-              <rect x="59" y="45" width="10" height="38" rx="1" fill="#FAFAF8" />
-              <rect x="72" y="55" width="10" height="28" rx="1" fill="#FAFAF8" />
-              {/* Book / base arc */}
-              <path d="M14 83 Q50 95 86 83" stroke="#FAFAF8" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-              {/* Compass arrow */}
-              <line x1="50" y1="33" x2="50" y2="10" stroke="#C9973A" strokeWidth="3" strokeLinecap="round" />
-              <polygon points="50,4 46,14 54,14" fill="#C9973A" />
-              {/* Compass center diamond */}
-              <rect x="46" y="33" width="8" height="8" rx="1" fill="#C9973A" transform="rotate(45 50 37)" />
+            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              {/* <!-- Building columns (navy) --> */}
+              <rect x="38" y="75" width="18" height="72" rx="2" fill="#1e3a5f" />
+              <rect x="62" y="62" width="18" height="85" rx="2" fill="#1e3a5f" />
+              <rect x="91" y="55" width="18" height="92" rx="2" fill="#1e3a5f" />
+              <rect x="120" y="62" width="18" height="85" rx="2" fill="#1e3a5f" />
+              <rect x="144" y="75" width="18" height="72" rx="2" fill="#1e3a5f" />
+
+              {/* Base arms */}
+              <rect x="22" y="138" width="56" height="14" rx="2" fill="#1e3a5f" />
+              <rect x="122" y="138" width="56" height="14" rx="2" fill="#1e3a5f" />
+
+              {/* Bottom chevron */}
+              <polygon points="40,152 100,185 160,152 150,152 100,172 50,152" fill="#1e3a5f" />
+
+              {/* Compass star (gold) */}
+              <polygon points="100,18 106,52 100,46 94,52" fill="#c8922a" />
+              <polygon points="100,72 106,58 100,62 94,58" fill="#c8922a" />
+              <polygon points="72,45 88,51 84,45 88,39" fill="#c8922a" />
+              <polygon points="128,45 112,51 116,45 112,39" fill="#c8922a" />
+              <circle cx="100" cy="45" r="6" fill="#7a5520" />
             </svg>
 
             {/* Vertical divider */}

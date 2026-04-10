@@ -27,7 +27,7 @@ export default function WhoWeWorkWith() {
       <section className="py-20 md:py-32 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            
+
             {/* Persona 1 */}
             <div className="bg-white border-t-4 border-[#B68817] shadow-sm p-10 relative">
               <h2 className="font-serif text-3xl font-bold text-[#0F1419] mb-4">Global Companies</h2>
@@ -36,9 +36,9 @@ export default function WhoWeWorkWith() {
                 You have a proven business model globally but recognize that India is a fundamentally different ecosystem. Copy-pasting your global strategy won't work.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> Localized product pricing matrices.</li>
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> Native distribution alliances.</li>
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> High-trust enterprise business development.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> Localized product pricing matrices.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> Native distribution alliances.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> High-trust enterprise business development.</li>
               </ul>
             </div>
 
@@ -50,9 +50,9 @@ export default function WhoWeWorkWith() {
                 You have achieved initial product-market fit. Now, operations are breaking as team size balloons. You need to transition from "hustle" to "system."
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> Scalable organizational structures.</li>
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> Systematic GTM playbooks.</li>
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> Leadership delegation mechanics.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Structural Imperative:</strong> Scalable organizational structures.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Operational Imperative:</strong> Systematic GTM playbooks.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Leadership Imperative:</strong> Leadership delegation mechanics.</li>
               </ul>
             </div>
 

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { SectionDivider } from '@/components/SectionDivider'
 import { PremiumButton } from '@/components/PremiumButton'
+import { TestimonialCard } from '@/components/PremiumCard'
+import { testimonials } from '@/lib/proof-data'
 
 export const metadata: Metadata = {
   title: 'The TFSA Framework | Startup Architecture',
@@ -370,6 +372,36 @@ export default function TFSAFramework() {
                 <p className="text-[#0F1419] font-semibold">{item}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PHILOSOPHY-ALIGNED PROOF — Quote Callout */}
+      <section className="bg-[#1F2937] py-16 md:py-24 border-y border-[#374151]">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">Architecture in Practice</p>
+            <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">
+              The TFSA Framework is not a methodology on paper. It is a system that has been applied across real business contexts.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TestimonialCard
+              quote={testimonials[0].quote}
+              name={testimonials[0].name}
+              title={testimonials[0].title}
+              company={testimonials[0].company}
+              engagementType={testimonials[0].engagementType}
+              variant="dark"
+            />
+            <TestimonialCard
+              quote={testimonials[2].quote}
+              name={testimonials[2].name}
+              title={testimonials[2].title}
+              company={testimonials[2].company}
+              engagementType={testimonials[2].engagementType}
+              variant="dark"
+            />
           </div>
         </div>
       </section>

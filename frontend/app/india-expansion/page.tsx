@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { SectionDivider } from '@/components/SectionDivider'
 import { PremiumButton } from '@/components/PremiumButton'
-import { SuccessStoryCard } from '@/components/PremiumCard'
+import { TestimonialCard, SuccessStoryCard } from '@/components/PremiumCard'
+import { testimonials, successStories } from '@/lib/proof-data'
 
 export const metadata: Metadata = {
   title: 'India Market Expansion | TFSA Global',
@@ -264,12 +265,71 @@ export default function IndiaExpansion() {
         </div>
       </section>
 
+      {/* PROOF SECTION */}
+      <section className="bg-[#0F1419] py-20 md:py-32 border-t border-[#374151]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">Execution Evidence</p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#FAFAF8] mb-4">
+              What Clients Experience on the Ground
+            </h2>
+            <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">
+              Not strategy decks. Not advisory reports. Structured execution with measurable outcomes.
+            </p>
+          </div>
+
+          {/* Testimonials - 2 India Expansion voices */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            <TestimonialCard
+              quote={testimonials[1].quote}
+              name={testimonials[1].name}
+              title={testimonials[1].title}
+              company={testimonials[1].company}
+              engagementType={testimonials[1].engagementType}
+              variant="dark"
+            />
+            <TestimonialCard
+              quote={testimonials[3].quote}
+              name={testimonials[3].name}
+              title={testimonials[3].title}
+              company={testimonials[3].company}
+              engagementType={testimonials[3].engagementType}
+              variant="dark"
+            />
+          </div>
+
+          {/* 2 India Expansion success stories */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <SuccessStoryCard
+              clientRef={successStories[0].clientRef}
+              industry={successStories[0].industry}
+              sector={successStories[0].sector}
+              challenge={successStories[0].challenge}
+              solution={successStories[0].solution}
+              outcome={successStories[0].outcome}
+              tag={successStories[0].tag}
+              comingSoon={successStories[0].comingSoon}
+            />
+            <SuccessStoryCard
+              clientRef={successStories[3].clientRef}
+              industry={successStories[3].industry}
+              sector={successStories[3].sector}
+              challenge={successStories[3].challenge}
+              solution={successStories[3].solution}
+              outcome={successStories[3].outcome}
+              tag={successStories[3].tag}
+              comingSoon={successStories[3].comingSoon}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-gradient-to-b from-[#1a222a] to-[#0F1419] py-24 md:py-40">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-[#9CA3AF] text-lg mb-4">India is a high-opportunity market. But success depends on execution.</p>
           <h2 className="font-serif text-4xl md:text-6xl font-bold text-[#FAFAF8] mb-6">
-            Don't enter India through trial &amp; error.
+            Don&apos;t enter India through trial &amp; error.
           </h2>
           <p className="text-[#B68817] text-xl font-semibold mb-10">Architect it right from the start.</p>
           <PremiumButton href="/contact" className="px-8 py-4 justify-center mt-4 text-lg">

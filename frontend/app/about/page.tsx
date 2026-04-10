@@ -198,6 +198,86 @@ export default function About() {
         </div>
       </section>
 
+      {/* 3.5 SELECTED CLIENT CONTEXTS */}
+      <section className="bg-[#FAFAF8] py-20 md:py-28">
+        <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">Engagement Environments</p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#0F1419] mb-4">
+              Selected Client Contexts
+            </h2>
+            <p className="text-[#4B5563] text-lg max-w-2xl mx-auto">
+              TFSA architecture has been applied across different industries, stages, and market contexts. These represent the environments where the methodology has been tested and refined.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {[
+              {
+                context: 'Global Company → India Entry',
+                type: 'India Expansion',
+                note: 'European B2B technology platform. Market entry architecture, GTM design, enterprise distribution.',
+                accent: '#B68817',
+              },
+              {
+                context: 'Seed-Stage Startup → Architecture',
+                type: 'TFSA Framework',
+                note: 'Founder-dependent SaaS venture. Business model redesign, operating systems, delegation framework.',
+                accent: '#4B9B8E',
+              },
+              {
+                context: 'Growth-Stage → Structured Scale',
+                type: 'Growth Execution',
+                note: 'Logistics business scaling without structure. Model clarity, unit economics, operational architecture.',
+                accent: '#374151',
+              },
+              {
+                context: 'EdTech Platform → Compliant Entry',
+                type: 'India Expansion',
+                note: 'Global EdTech attempting regulated India entry. Compliance architecture, distributor partnerships.',
+                accent: '#B68817',
+              },
+              {
+                context: 'Manufacturer → Distribution Rebuild',
+                type: 'Growth Execution',
+                note: 'Multi-state manufacturer. Fragmented distribution unified into a structured national channel system.',
+                accent: '#374151',
+              },
+              {
+                context: 'Services Firm → Margin Architecture',
+                type: 'TFSA Framework',
+                note: 'Professional services firm with revenue but eroding margins. Productized service framework and pricing redesign.',
+                accent: '#4B9B8E',
+              },
+            ].map((item) => (
+              <div
+                key={item.context}
+                className="bg-white border border-[#E5E7EB] p-6 shadow-sm hover:border-[#B68817]/30 transition-colors"
+              >
+                <div className="flex items-start justify-between gap-2 mb-4">
+                  <span
+                    className="text-xs font-bold uppercase tracking-widest px-2 py-1"
+                    style={{ backgroundColor: `${item.accent}15`, color: item.accent }}
+                  >
+                    {item.type}
+                  </span>
+                </div>
+                <h4 className="font-serif font-bold text-[#0F1419] text-base mb-3 leading-snug">
+                  {item.context}
+                </h4>
+                <p className="text-[#4B5563] text-sm leading-relaxed">{item.note}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <p className="text-[#9CA3AF] text-sm italic">
+              Every engagement is architected from first principles — not templates applied from previous contexts.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 4. CLOSING CTA */}
       <section className="bg-gradient-to-t from-[#0F1419] to-[#1a222a] py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 text-center">
