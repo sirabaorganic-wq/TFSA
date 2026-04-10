@@ -30,7 +30,7 @@ export default function WhoWeWorkWith() {
 
             {/* Persona 1 */}
             <div className="bg-white border-t-4 border-[#B68817] shadow-sm p-10 relative">
-              <h2 className="font-serif text-3xl font-bold text-[#0F1419] mb-4">Global Companies</h2>
+              <h2 className="font-serif text-3xl font-bold text-[#0F1419] mb-4">Strategic Imperatives</h2>
               <p className="text-[#B68817] font-semibold uppercase tracking-wider text-sm mb-6">Entering the India Market</p>
               <p className="text-[#4B5563] text-lg mb-6">
                 You have a proven business model globally but recognize that India is a fundamentally different ecosystem. Copy-pasting your global strategy won't work.
@@ -38,13 +38,13 @@ export default function WhoWeWorkWith() {
               <ul className="space-y-3 mb-8">
                 <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> Localized product pricing matrices.</li>
                 <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> Native distribution alliances.</li>
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> High-trust enterprise business development.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Capability:</strong> High-trust enterprise.</li>
               </ul>
             </div>
 
             {/* Persona 2 */}
             <div className="bg-[#1F2937] border-t-4 border-[#4B9B8E] shadow-sm p-10 text-white relative">
-              <h2 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-4">Growth-Stage Startups</h2>
+              <h2 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-4">Critical Capabilities</h2>
               <p className="text-[#4B9B8E] font-semibold uppercase tracking-wider text-sm mb-6">Expanding &amp; Organizing Matrix</p>
               <p className="text-[#D1D5DB] text-lg mb-6">
                 You have achieved initial product-market fit. Now, operations are breaking as team size balloons. You need to transition from "hustle" to "system."
@@ -58,29 +58,29 @@ export default function WhoWeWorkWith() {
 
             {/* Persona 3 */}
             <div className="bg-[#1F2937] border-t-4 border-[#FAFAF8] shadow-sm p-10 text-white relative">
-              <h2 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-4">Founders</h2>
+              <h2 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-4">Structural Imperatives</h2>
               <p className="text-[#9CA3AF] font-semibold uppercase tracking-wider text-sm mb-6">Seeking Tactical Freedom</p>
               <p className="text-[#D1D5DB] text-lg mb-6">
                 You are the bottleneck. Every decision routes through you. To build a highly profitable, investor-ready business, the dependency on your heroics must end.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> Founder dependency elimination.</li>
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> Decentralized decision frameworks.</li>
-                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Needed:</strong> True operational independence.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Structural Imperatives:</strong> Founder dependency elimination.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Structural Imperatives:</strong> Decentralized decision framework.</li>
+                <li className="flex text-[#D1D5DB]"><strong className="text-[#FAFAF8] mr-2">Structural Imperatives:</strong> True operational independence.</li>
               </ul>
             </div>
 
             {/* Persona 4 */}
             <div className="bg-white border-t-4 border-[#374151] shadow-sm p-10 relative">
-              <h2 className="font-serif text-3xl font-bold text-[#0F1419] mb-4">Investors / Platforms</h2>
+              <h2 className="font-serif text-3xl font-bold text-[#0F1419] mb-4">Critical Interventions</h2>
               <p className="text-[#374151] font-semibold uppercase tracking-wider text-sm mb-6">Protecting Capital &amp; Trajectory</p>
               <p className="text-[#4B5563] text-lg mb-6">
                 You've funded incredible visionaries, but they lack the operational chops to deploy that capital safely within complex environments like India.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> Portfolio health stabilization.</li>
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> Structuring unit economics.</li>
-                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Needed:</strong> Execution oversight and tracking.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Interventions:</strong> Portfolio health stabilization.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Interventions:</strong> Structuring unit economics.</li>
+                <li className="flex text-[#4B5563]"><strong className="text-[#0F1419] mr-2">Critical Interventions:</strong> Execution oversight and tracking.</li>
               </ul>
             </div>
 

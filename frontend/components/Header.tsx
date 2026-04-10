@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -28,28 +29,14 @@ export function Header() {
             title="Design Your Business. Build Your Freedom"
           >
             {/* Compass / Building Icon — matches the logo mark */}
-            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              {/* <!-- Building columns (navy) --> */}
-              <rect x="38" y="75" width="18" height="72" rx="2" fill="#1e3a5f" />
-              <rect x="62" y="62" width="18" height="85" rx="2" fill="#1e3a5f" />
-              <rect x="91" y="55" width="18" height="92" rx="2" fill="#1e3a5f" />
-              <rect x="120" y="62" width="18" height="85" rx="2" fill="#1e3a5f" />
-              <rect x="144" y="75" width="18" height="72" rx="2" fill="#1e3a5f" />
-
-              {/* Base arms */}
-              <rect x="22" y="138" width="56" height="14" rx="2" fill="#1e3a5f" />
-              <rect x="122" y="138" width="56" height="14" rx="2" fill="#1e3a5f" />
-
-              {/* Bottom chevron */}
-              <polygon points="40,152 100,185 160,152 150,152 100,172 50,152" fill="#1e3a5f" />
-
-              {/* Compass star (gold) */}
-              <polygon points="100,18 106,52 100,46 94,52" fill="#c8922a" />
-              <polygon points="100,72 106,58 100,62 94,58" fill="#c8922a" />
-              <polygon points="72,45 88,51 84,45 88,39" fill="#c8922a" />
-              <polygon points="128,45 112,51 116,45 112,39" fill="#c8922a" />
-              <circle cx="100" cy="45" r="6" fill="#7a5520" />
-            </svg>
+            <Image
+              src="/image copy.png"
+              alt="The Freedom Startup Architect Logo"
+              width={50}
+              height={50}
+              className="object-contain group-hover:scale-105 transition-transform duration-200"
+              priority
+            />
 
             {/* Vertical divider */}
             <div className="w-px h-10 bg-[#FAFAF8]/25 mx-1 flex-shrink-0" aria-hidden="true" />

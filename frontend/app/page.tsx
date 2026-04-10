@@ -5,6 +5,7 @@ import { PremiumButton } from '@/components/PremiumButton'
 import { PremiumCard, FrameworkShowcase, SectionCard, TestimonialCard, SuccessStoryCard } from '@/components/PremiumCard'
 import { SectionDivider } from '@/components/SectionDivider'
 import { testimonials, successStories } from '@/lib/proof-data'
+import { ClientTestimonialsSlider } from '@/components/ClientTestimonialsSlider'
 
 export const metadata: Metadata = {
   title: 'TFSA Global | India Market Entry & Scalable Growth',
@@ -464,7 +465,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#FAFAF8] mb-4">
               Real Execution. Real Outcomes.
             </h2>
-            <p className="text-[#9CA3AF] text-lg">Six distinct business contexts. One consistent methodology. Structured architecture over trial and error.</p>
+            <p className="text-[#9CA3AF] text-lg">Seven distinct business contexts. One consistent methodology. Structured architecture over trial and error.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -482,6 +483,20 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 11B. CLIENT TESTIMONIALS SLIDER */}
+      <section className="bg-[#0F1419] pb-20 md:pb-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12 text-center">
+            <p className="text-[#B68817] font-semibold tracking-widest uppercase mb-4">From The Founders</p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#FAFAF8] mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">In their own words — the founders and operators who went through the TFSA process.</p>
+          </div>
+          <ClientTestimonialsSlider />
         </div>
       </section>
 

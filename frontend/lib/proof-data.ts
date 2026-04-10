@@ -94,92 +94,100 @@ export interface SuccessStory {
 export const successStories: SuccessStory[] = [
   {
     id: 'SS001',
-    clientRef: 'B2B SaaS Platform',
-    industry: 'Enterprise Software',
-    sector: 'Technology',
+    clientRef: 'MoversTrip Digital Services LLP',
+    industry: 'Logistics Tech',
+    sector: 'Startup Architecture',
     challenge:
-      'A product-market fit–validated SaaS company attempting India entry had no ground-level distribution architecture. They had completed 3 failed pilot partnerships and were burning runway without traction.',
+      'A digital-first relocation platform with strong intent but weak backend structure. Customer acquisition was inconsistent, vendor onboarding was unstructured, and operations depended heavily on manual coordination.',
     solution:
-      'TFSA mapped the enterprise buyer landscape, redesigned the GTM for Indian procurement cycles, and built a channel partnership framework targeting IT decision-makers in mid-market firms.',
+      'Structured a two-sided marketplace (customer + vendor model), designed a lead-to-conversion funnel with defined stages, built a vendor onboarding & quality control system, and aligned pricing with service tiers and margins.',
     outcome:
-      'Three anchor enterprise accounts secured within 90 days of TFSA engagement. Pipeline qualified and distribution architecture handed over as an operational playbook.',
-    tag: 'India Expansion',
-    comingSoon: true,
-    isPlaceholder: true,
+      'Improved lead-to-conversion consistency, structured vendor network with better service reliability, reduced operational chaos, and a shift from reactive operations to a scalable platform model.',
+    tag: 'Startup Architecture',
+    comingSoon: false,
   },
   {
     id: 'SS002',
-    clientRef: 'European Consumer Brand',
-    industry: 'Consumer Goods',
-    sector: 'FMCG / Retail',
+    clientRef: 'VFL Marketing',
+    industry: 'Marketing & Growth Services',
+    sector: 'GTM',
     challenge:
-      'A premium European brand entered India at a price point misaligned with the actual addressable market. They had invested in brand presence with near-zero revenue return after 12 months.',
+      'A capable marketing firm struggling with positioning clarity and inconsistent client acquisition. Revenue depended heavily on referrals without a structured growth engine.',
     solution:
-      'TFSA conducted a full market repositioning analysis, rebuilt the pricing architecture for two distinct SKU tiers, and executed a phased metro-first launch across Mumbai and Delhi with local distributor partnerships.',
+      'Implemented a clear ICP & positioning strategy, structured service packaging & pricing tiers, a predictable lead generation + conversion system, and a defined sales process instead of ad-hoc pitching.',
     outcome:
-      'Successful relaunch in two metro markets within the first quarter. Distribution partnerships established with two regional networks.',
+      'More consistent client acquisition, higher-value deal closures, clear brand positioning in the market, and a transition from random growth to a repeatable GTM engine.',
     tag: 'GTM',
-    comingSoon: true,
-    isPlaceholder: true,
+    comingSoon: false,
   },
   {
     id: 'SS003',
-    clientRef: 'Logistics Startup',
-    industry: 'Logistics & Operations',
+    clientRef: 'Aakash Deep Packers & Movers',
+    industry: 'Logistics Operations',
     sector: 'Supply Chain',
     challenge:
-      'A logistics venture growing at 40% YoY was completely founder-dependent. Every decision flowed through one person. The team could not execute independently. Scale was creating fragility, not strength.',
+      'A traditional logistics business with strong demand but low operational efficiency. Margins were inconsistent, and growth was limited by manual coordination.',
     solution:
-      'TFSA applied the full TFSA Framework architecture — rebuilt the operating model, documented delegation playbooks, designed tiered decision authorities, and created a management operating system the founder could step back from.',
+      'Restructured route planning & job allocation systems, standardized pricing based on distance, load & service level, defined operational SOPs for execution teams, and introduced performance tracking metrics.',
     outcome:
-      'Founder successfully stepped out of day-to-day operations. Team assumed autonomous execution within 4 months. Business continued scaling without founder dependency.',
-    tag: 'Startup Architecture',
-    comingSoon: true,
-    isPlaceholder: true,
+      'Improved operational efficiency, better margin visibility, reduced dependency on owner decisions, and the ability to scale operations across multiple locations.',
+    tag: 'Growth Execution',
+    comingSoon: false,
   },
   {
     id: 'SS004',
-    clientRef: 'Global EdTech Platform',
-    industry: 'Education Technology',
-    sector: 'EdTech',
+    clientRef: 'Khushi Relocation & Logistics',
+    industry: 'Local Logistics',
+    sector: 'Supply Chain',
     challenge:
-      'A global EdTech company attempted India market entry and was blocked by regulatory friction around content licensing and data localization. Two prior consultants had failed to navigate it.',
+      'High operational workload with no structured system. Business was running, but growth was unpredictable and difficult to manage.',
     solution:
-      'TFSA mapped the regulatory landscape with on-ground legal integration, restructured the product delivery architecture for India compliance, and negotiated two strategic partnerships with regulated education distributors.',
+      'Implemented a structured inquiry-to-booking workflow, defined service packages & pricing logic, a vendor coordination system, and a daily operations dashboard for tracking.',
     outcome:
-      'Fully compliant India market entry executed. Two strategic distribution partnerships closed. Content licensing framework established for long-term operation.',
-    tag: 'India Expansion',
-    comingSoon: true,
-    isPlaceholder: true,
+      'Improved booking consistency, reduced operational confusion, faster execution turnaround, and a transition from informal operations to a structured logistics business.',
+    tag: 'Growth Execution',
+    comingSoon: false,
   },
   {
     id: 'SS005',
-    clientRef: 'Manufacturing Company',
-    industry: 'Manufacturing',
-    sector: 'Industrial / B2B',
+    clientRef: 'LifeBoat RMS Pvt. Ltd.',
+    industry: 'Risk & Compliance Services',
+    sector: 'Startup Architecture',
     challenge:
-      'A mid-size manufacturer had fragmented distribution across 6 states with inconsistent pricing, no unified channel management, and declining margins due to distributor conflict.',
+      'A niche service business with strong expertise but an unclear scalability path. Growth was limited due to lack of structured positioning and a defined sales system.',
     solution:
-      'TFSA designed and implemented a national distribution architecture — unified pricing policy, tiered distributor agreements, and a channel governance framework. Executed a migration from fragmented to structured distribution over two quarters.',
+      'Defined core service verticals & target industries, structured enterprise-focused service packages, built a B2B sales pipeline system, and aligned the delivery model with scalable execution.',
     outcome:
-      'Unified national distribution network operational. Distributor conflict reduced. Margin recovery of 18% within the first quarter post-restructure.',
-    tag: 'Growth Execution',
-    comingSoon: true,
-    isPlaceholder: true,
+      'Improved clarity in market positioning, more structured enterprise client acquisition, better alignment between sales and delivery, and an evolution from service provider to scalable consulting model.',
+    tag: 'Startup Architecture',
+    comingSoon: false,
   },
   {
     id: 'SS006',
-    clientRef: 'Professional Services Firm',
-    industry: 'Professional Services',
-    sector: 'Consulting / Advisory',
+    clientRef: 'Kapsan Logistics India Pvt. Ltd.',
+    industry: 'Enterprise Logistics',
+    sector: 'Supply Chain',
     challenge:
-      'A professional services firm had strong revenue but deteriorating margins — a symptom of an unscalable service delivery model where senior time was consumed on low-value tasks and pricing was inconsistent.',
+      'An expanding logistics company facing coordination inefficiencies across operations. Scaling created complexity without corresponding systems.',
     solution:
-      'TFSA restructured the service delivery model, implemented tiered pricing architecture, built a productized service framework for lower-margin offerings, and redesigned the resource allocation model.',
+      'Introduced a multi-layer operational structure, defined roles & decision-making hierarchy, a process-driven logistics execution model, and performance tracking across locations.',
     outcome:
-      '40% gross margin improvement within two quarters. Revenue per senior hour increased. The firm moved from reactive project delivery to a structured, proposal-driven model.',
-    tag: 'TFSA Framework',
+      'Improved coordination across operations, reduced execution delays, stronger organizational structure, and a business that became scalable beyond founder dependency.',
+    tag: 'Growth Execution',
     comingSoon: false,
-    isPlaceholder: true,
+  },
+  {
+    id: 'SS007',
+    clientRef: 'Hi-Tech IT Infrastructure Solutions & Security',
+    industry: 'Technology | B2B Services',
+    sector: 'GTM + Architecture',
+    challenge:
+      'A technically strong company that lacked clear market positioning and a scalable sales approach. Growth was limited to network-driven opportunities.',
+    solution:
+      'Defined enterprise-focused positioning, structured service offerings (AMC, security, infra solutions), built a B2B sales pipeline system, and aligned technical delivery with a scalable service model.',
+    outcome:
+      'Improved deal quality and ticket size, more predictable sales pipeline, stronger positioning in the IT infrastructure space, and a shift from service execution to structured business growth.',
+    tag: 'GTM',
+    comingSoon: false,
   },
 ]
