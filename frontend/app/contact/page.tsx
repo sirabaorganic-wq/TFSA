@@ -1,13 +1,54 @@
-import type { Metadata } from 'next'
-import { SectionDivider } from '@/components/SectionDivider'
-import { PremiumButton } from '@/components/PremiumButton'
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Start India Entry Assessment | TFSA Global',
-  description: 'Initiate your market entry assessment and architect your expansion strategy before committing capital.',
-}
+import { useState } from 'react';
+import { SectionDivider } from '@/components/SectionDivider';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    market: '',
+    stage: '',
+    goal: ''
+  });
+
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      const res = await fetch(`${backendUrl}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to submit the form.');
+      }
+
+      setStatus('success');
+      setFormData({ name: '', email: '', company: '', market: '', stage: '', goal: '' });
+    } catch (err: any) {
+      console.error(err);
+      setStatus('error');
+      setErrorMessage(err.message || 'An unexpected error occurred. Please try again later.');
+    }
+  };
+
   return (
     <div className="bg-[#0F1419] min-h-screen">
       <section className="bg-gradient-to-t from-[#0F1419] to-[#1a222a] py-20 md:py-32">
@@ -31,50 +72,135 @@ export default function Contact() {
             {/* Form Section */}
             <div className="lg:w-3/5">
               <div className="bg-white p-8 md:p-12 border border-[#E5E7EB] shadow-sm rounded-sm">
-                <form className="space-y-6">
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Full Name</label>
-                      <input type="text" className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" placeholder="Jane Doe" required />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Email Address</label>
-                      <input type="email" className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" placeholder="jane@company.com" required />
-                    </div>
+                
+                {status === 'success' ? (
+                  <div className="text-center py-10 bg-[#ECFDF5] border border-[#10B981] rounded-sm">
+                    <h3 className="text-2xl font-bold text-[#065F46] mb-4">Request Submitted Successfully</h3>
+                    <p className="text-[#047857]">Our team will review your alignment and get back to you within 48 hours.</p>
+                    <button 
+                      onClick={() => setStatus('idle')}
+                      className="mt-6 px-6 py-2 bg-[#10B981] text-white rounded-sm font-medium hover:bg-[#059669] transition-colors"
+                    >
+                      Submit Another Request
+                    </button>
                   </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    {status === 'error' && (
+                      <div className="p-4 mb-6 text-sm text-[#B91C1C] bg-[#FEF2F2] border border-[#F87171] rounded-sm">
+                        {errorMessage}
+                      </div>
+                    )}
 
-                  <div>
-                    <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Company Name</label>
-                    <input type="text" className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" placeholder="Company Inc." required />
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Current Market</label>
-                      <input type="text" className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" placeholder="e.g. USA, UK, Singapore" required />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Full Name</label>
+                        <input 
+                          type="text" 
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                          placeholder="Jane Doe" 
+                          required 
+                          disabled={status === 'loading'}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Email Address</label>
+                        <input 
+                          type="email" 
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                          placeholder="jane@company.com" 
+                          required 
+                          disabled={status === 'loading'}
+                        />
+                      </div>
                     </div>
+
                     <div>
-                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Business Stage</label>
-                      <select className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" required>
-                        <option value="" disabled selected>Select Stage</option>
-                        <option value="seed">Seed / Validating</option>
-                        <option value="seriesA">Series A / Early Scaling</option>
-                        <option value="growth">Growth Stage (Series B+)</option>
-                        <option value="enterprise">Established Enterprise</option>
-                      </select>
+                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Company Name</label>
+                      <input 
+                        type="text" 
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                        placeholder="Company Inc." 
+                        required 
+                        disabled={status === 'loading'}
+                      />
                     </div>
-                  </div>
 
-                  <div>
-                    <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Primary Goal in India</label>
-                    <textarea rows={4} className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" placeholder="Briefly describe what you are looking to execute or achieve..." required></textarea>
-                  </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Current Market</label>
+                        <input 
+                          type="text" 
+                          name="market"
+                          value={formData.market}
+                          onChange={handleChange}
+                          className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                          placeholder="e.g. USA, UK, Singapore" 
+                          required 
+                          disabled={status === 'loading'}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Business Stage</label>
+                        <select 
+                          name="stage"
+                          value={formData.stage}
+                          onChange={handleChange}
+                          className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                          required
+                          disabled={status === 'loading'}
+                        >
+                          <option value="" disabled>Select Stage</option>
+                          <option value="seed">Seed / Validating</option>
+                          <option value="seriesA">Series A / Early Scaling</option>
+                          <option value="growth">Growth Stage (Series B+)</option>
+                          <option value="enterprise">Established Enterprise</option>
+                        </select>
+                      </div>
+                    </div>
 
-                  <button type="submit" className="w-full inline-block px-6 py-4 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 shadow-sm text-center text-lg">
-                    Submit Assessment Request
-                  </button>
-                </form>
+                    <div>
+                      <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Primary Goal in India</label>
+                      <textarea 
+                        name="goal"
+                        rows={4} 
+                        value={formData.goal}
+                        onChange={handleChange}
+                        className="w-full bg-[#FAFAF8] border border-[#E5E7EB] p-3 text-[#0F1419] rounded-sm focus:outline-none focus:border-[#B68817] transition-colors" 
+                        placeholder="Briefly describe what you are looking to execute or achieve..." 
+                        required
+                        disabled={status === 'loading'}
+                      ></textarea>
+                    </div>
+
+                    <button 
+                      type="submit" 
+                      disabled={status === 'loading'}
+                      className="w-full inline-flex justify-center items-center px-6 py-4 bg-[#B68817] text-white rounded-sm font-medium hover:bg-[#A08560] transition-colors duration-150 shadow-sm text-center text-lg disabled:opacity-70 disabled:cursor-not-allowed"
+                    >
+                      {status === 'loading' ? (
+                        <span className="flex items-center gap-2">
+                          <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Submitting...
+                        </span>
+                      ) : (
+                        'Submit Assessment Request'
+                      )}
+                    </button>
+                  </form>
+                )}
               </div>
             </div>
 
