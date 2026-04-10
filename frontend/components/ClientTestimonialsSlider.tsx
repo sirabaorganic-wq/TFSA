@@ -87,7 +87,7 @@ const clientTestimonials: ClientTestimonial[] = [
   {
     id: "CT008",
     quote:
-      "We were technically strong, but our business structure needed clarity for scale. TFSA helped us define our positioning, streamline our service model, and build a more structured growth approach. It shifted us from a service provider mindset to a scalable business system.",
+      "In today’s startup ecosystem, most founders are overwhelmed by execution complexity rather than lack of ideas.What TFSA brings is rare — a structured way of thinking about business that goes beyond strategy and actually builds systems for scale. It’s not just consulting. It’s architecture.For any founder serious about building a business that is scalable, sustainable, and not dependent on constant firefighting, TFSA is a significant advantage.",
     name: "Mr. Nair",
     title: "Founder",
     company: "Entrepreneur",
