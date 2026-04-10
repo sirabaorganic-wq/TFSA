@@ -37,41 +37,41 @@ export const testimonials: Testimonial[] = [
   {
     id: 'T001',
     quote:
-      'We had the idea, the funding, and the intent. What we didn\'t have was a business that could run without us in the room. TFSA rebuilt the architecture from the ground up. Within six months, I was no longer the bottleneck. The systems did what I used to do.',
-    name: 'Arjun Mehta',
-    title: 'Co-Founder & CEO',
-    company: 'Early-Stage SaaS Venture',
-    engagementType: 'TFSA Framework',
+      'We had strong inbound metrics globally. India looked like low-hanging fruit on paper. Twelve months later, near-zero traction. No local distribution, global pricing, no enterprise sales motion. India B2B is not a self-serve market — it is relationship and trust-driven. We learned that the hard way.',
+    name: 'Head of International Growth',
+    title: 'VP of Growth',
+    company: 'European B2B SaaS Company',
+    engagementType: 'India Expansion',
     isPlaceholder: true, // REPLACE WITH CLIENT CONTENT
   },
   {
     id: 'T002',
     quote:
-      'Every advisor we spoke to gave us a report. TFSA gave us a distribution system, a sales playbook, and two enterprise accounts before our official India launch. The difference between strategy and execution is everything.',
-    name: 'Marcus van der Berg',
-    title: 'Managing Director, Asia Pacific',
-    company: 'European B2B Technology Company',
-    engagementType: 'India Expansion',
+      'We positioned as premium, spent heavily on brand, and assumed urban India would respond the way Western Europe did. It did not. Weak retail distribution and misaligned positioning burned the marketing budget with no meaningful movement. India does not reject premium — it rejects misaligned premium.',
+    name: 'Director of Emerging Markets',
+    title: 'Director',
+    company: 'Western European Consumer FMCG Brand',
+    engagementType: 'TFSA Framework',
     isPlaceholder: true, // REPLACE WITH CLIENT CONTENT
   },
   {
     id: 'T003',
     quote:
-      'We were scaling, but it felt like we were scaling chaos. The TFSA Framework forced us to confront the structural gaps — not with theory, but with a working execution plan. Margins improved. Clarity improved. The business started feeling like a business.',
-    name: 'Priya Sharma',
-    title: 'Founder',
-    company: 'Growth-Stage Professional Services',
-    engagementType: 'Growth Execution',
+      'We ran our global playbook. No regional adaptation, no on-ground partnerships, no account for local competition. Within eighteen months, better-adapted local competitors had taken the ground we thought we owned. What happened to us in India is what happened to some of the most well-funded global companies — execution gaps are unforgiving here.',
+    name: 'Chief Strategy Officer',
+    title: 'CSO',
+    company: 'US-Based Tech Platform',
+    engagementType: 'India Expansion',
     isPlaceholder: true, // REPLACE WITH CLIENT CONTENT
   },
   {
     id: 'T004',
     quote:
-      'Entering India felt impossible until we had a structured architecture for it. TFSA mapped the regulatory terrain, built the GTM from the ground up, and stayed in the execution. Not a slide deck. A functioning market presence.',
-    name: 'James Whitfield',
-    title: 'Chief Growth Officer',
-    company: 'Global EdTech Platform',
-    engagementType: 'India Expansion',
+      'The pattern is documented and repeatable — Walmart India, eBay India, Kellogg\'s early India push. Global capital and global brand are not sufficient. The companies that win here earn it through structural execution: local distribution, relationship-led sales, and a product or price point built for this market.',
+    name: 'Market Entry Analyst',
+    title: 'Principal',
+    company: 'India Strategy Practice',
+    engagementType: 'Growth Execution',
     isPlaceholder: true, // REPLACE WITH CLIENT CONTENT
   },
 ]
