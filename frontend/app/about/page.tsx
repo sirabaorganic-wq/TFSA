@@ -154,7 +154,7 @@ export default function About() {
                     </p>
                   </div>
                   <div>
-                    <a href="#" className="inline-flex items-center px-4 py-2 border border-[#B68817] text-[#B68817] rounded-sm text-sm font-medium hover:bg-[#B68817] hover:text-white transition-colors">
+                    <a href="https://www.amazon.com/-/he/Rajesh-Thakur-ebook/dp/B0DZ6TGVRJ" className="inline-flex items-center px-4 py-2 border border-[#B68817] text-[#B68817] rounded-sm text-sm font-medium hover:bg-[#B68817] hover:text-white transition-colors">
                       Buy Book
                       <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -183,7 +183,7 @@ export default function About() {
                     </p>
                   </div>
                   <div>
-                    <a href="#" className="inline-flex items-center px-4 py-2 border border-[#B68817] text-[#B68817] rounded-sm text-sm font-medium hover:bg-[#B68817] hover:text-white transition-colors">
+                    <a href="https://www.amazon.com/Lets-Startup-Overcoming-Challenges-Entrepreneurship-ebook/dp/B0F6C7WTSK" className="inline-flex items-center px-4 py-2 border border-[#B68817] text-[#B68817] rounded-sm text-sm font-medium hover:bg-[#B68817] hover:text-white transition-colors">
                       Buy Book
                       <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
