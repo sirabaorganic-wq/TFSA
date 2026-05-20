@@ -66,11 +66,11 @@ export default function Contact() {
       <SectionDivider variant="thin" />
 
       <section className="py-20 md:py-32 bg-[#FAFAF8]">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16">
 
             {/* Form Section */}
-            <div className="lg:w-3/5">
+            <div className="lg:w-2/5">
               <div className="bg-white p-8 md:p-12 border border-[#E5E7EB] shadow-sm rounded-sm">
                 
                 {status === 'success' ? (
@@ -107,7 +107,7 @@ export default function Contact() {
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-bold text-[#0F1419] mb-2 uppercase">Email Address</label>
+                        <label className="block text-sm font-bold text-[#0F1419] mb-1 uppercase">Email Address</label>
                         <input 
                           type="email" 
                           name="email"
@@ -205,7 +205,7 @@ export default function Contact() {
             </div>
 
             {/* Strategic Framing Section */}
-            <div className="lg:w-2/5">
+            <div className="lg:w-1/3">
               <div className="bg-[#1F2937] p-10 rounded-sm border-t-4 border-[#B68817] text-white h-full">
                 <h3 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-6">Execution Readiness</h3>
                 <div className="space-y-6 text-[#D1D5DB] mb-10">
@@ -230,6 +230,29 @@ export default function Contact() {
               </div>
             </div>
 
+            <div className="lg:w-1/3 lg:h-1/2 ">
+              <div className="bg-[#1F2937] p-10 rounded-sm border-t-4 border-[#B68817] text-white h-full">
+                <h3 className="font-serif text-3xl font-bold text-[#FAFAF8] mb-6">Company Contact Details:</h3>
+                <p className="font-serif text-2xl font-bold text-[#B68817] mb-1">
+                  Corporate Address:
+                </p>
+                <p>
+                  TFSA Global, 206, Tower-A, Spaze i-Tech Park, Sector-49, Sohna Road, Gurugram -122018. Haryana, INDIA.
+                </p>
+                <p className="font-serif text-2xl font-bold text-[#B68817] mb-1">
+                  Registered Address:
+                </p>
+                <p>
+                  TFSA Global, 1C, Shani Enclave, Marutikunj, Nayagaon, Gurugram -122102, Haryana, INDIA
+                </p>
+                <p className="font-serif text-2xl font-bold text-[#B68817] mb-1">
+                  Contact Number:
+                </p>
+                <p>
+                  +91-8882555990.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

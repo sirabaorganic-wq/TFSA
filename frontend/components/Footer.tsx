@@ -29,6 +29,9 @@ export function Footer() {
               Registered Address: <br />
               TFSA Global, 1C, Shani Enclave, Marutikunj, Nayagaon, Gurugram -122102, Haryana, INDIA
             </p>
+            <p className='text-xs text-[#9CA3AF] mt-2'>
+              Contact Number: +91-8882555990.
+            </p>
           </div>
 
           {/* Navigation */}
