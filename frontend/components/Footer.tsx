@@ -21,6 +21,14 @@ export function Footer() {
             <p className="text-xs text-[#9CA3AF] italic">
               Design Your Business. Build Your Freedom.
             </p>
+            <p className='text-xs text-[#9CA3AF] mt-4'>
+            Corporate Address: <br />
+            TFSA Global, 206, Tower-A, Spaze i-Tech Park, Sector-49, Sohna Road, Gurugram -122018. Haryana, INDIA.
+            </p>
+            <p className='text-xs text-[#9CA3AF] mt-2'>
+              Registered Address: <br />
+              TFSA Global, 1C, Shani Enclave, Marutikunj, Nayagaon, Gurugram -122102, Haryana, INDIA
+            </p>
           </div>
 
           {/* Navigation */}
