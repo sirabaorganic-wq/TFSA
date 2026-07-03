@@ -22,8 +22,8 @@ export function Footer() {
               Design Your Business. Build Your Freedom.
             </p>
             <p className='text-xs text-[#9CA3AF] mt-4'>
-            Corporate Address: <br />
-            TFSA Global, 206, Tower-A, Spaze i-Tech Park, Sector-49, Sohna Road, Gurugram -122018. Haryana, INDIA.
+              Corporate Address: <br />
+              TFSA Global, 206, Tower-A, Spaze i-Tech Park, Sector-49, Sohna Road, Gurugram -122018. Haryana, INDIA.
             </p>
             <p className='text-xs text-[#9CA3AF] mt-2'>
               Registered Address: <br />
@@ -95,7 +95,7 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="font-medium text-[#FAFAF8] text-sm mb-4">Connect</h4>
+            <h4 className="font-medium text-[#FAFAF8] text-sm mb-4">Connect with Founder & CEO</h4>
             <ul className="space-y-3 text-sm">
               <li>
                 <a
