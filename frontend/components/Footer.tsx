@@ -103,8 +103,17 @@ export function Footer() {
                   className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
                   aria-label="Email"
                 >
-                  <Mail size={16} />
+                <Mail size={16} />
                   thefreedomstartuparchitect@gmail.com
+                </a>
+                <br />
+                <a
+                  href="mailto:tfsaglobal@gmail.com"
+                  className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
+                  aria-label="Email"
+                >
+                  <Mail size={16} />
+                  tfsaglobal@gmail.com
                 </a>
               </li>
               {/* <li>
