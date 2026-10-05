@@ -3,8 +3,12 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { PremiumButton } from '@/components/PremiumButton'
 
 export const metadata: Metadata = {
-  title: 'Who We Work With | TFSA Global',
-  description: 'Qualification-oriented execution frameworks for global companies, growth startups, and founders.',
+  title: 'Who We Work With | Global Entrants & Scaling Founders — TFSA Global',
+  description:
+    'TFSA Global partners with global companies entering India and growth-stage founders transitioning from reactive operations to structured business engines.',
+  alternates: {
+    canonical: '/who-we-work-with',
+  },
 }
 
 export default function WhoWeWorkWith() {

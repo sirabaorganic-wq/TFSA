@@ -5,8 +5,12 @@ import { TestimonialCard, SuccessStoryCard } from '@/components/PremiumCard'
 import { testimonials, successStories } from '@/lib/proof-data'
 
 export const metadata: Metadata = {
-  title: 'India Market Expansion | TFSA Global',
-  description: 'Your gateway to India. Complete execution architecture for market entry and scalable growth.',
+  title: 'India Market Expansion | End-to-End Entry & Commercial Execution — TFSA Global',
+  description:
+    'Architect and execute your India expansion. TFSA Global provides on-ground GTM systems, enterprise partnerships, and localized commercial execution.',
+  alternates: {
+    canonical: '/india-expansion',
+  },
 }
 
 export default function IndiaExpansion() {

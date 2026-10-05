@@ -5,8 +5,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'About | TFSA Global & Rajesh Thakur',
-  description: 'Startup Architect & India Expansion Architect. Execution over perfection. Systems over chaos.',
+  title: 'About TFSA Global | Leadership & Business Architecture Philosophy',
+  description:
+    'Learn about TFSA Global and founder Rajesh Thakur. We replace founder dependency and trial-and-error expansion with scalable business architecture.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 export default function About() {

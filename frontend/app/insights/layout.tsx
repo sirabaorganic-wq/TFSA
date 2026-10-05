@@ -1,14 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Insights | TFSA Global — India Market & Architecture Thinking',
+  title: 'Execution Insights | India Market Entry & Architecture Analysis — TFSA Global',
   description:
-    'Deep dives into India market entry, startup architecture, case breakdowns, and founder mistakes. Authority content from TFSA Global.',
-  openGraph: {
-    title: 'Insights | TFSA Global',
-    description:
-      'Analysis on India expansion, startup architecture, and execution systems from TFSA Global.',
-    type: 'website',
+    'Read strategic insights on India market entry, startup architecture, GTM breakdowns, and common founder execution pitfalls from TFSA Global.',
+  alternates: {
+    canonical: '/insights',
   },
 }
 

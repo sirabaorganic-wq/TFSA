@@ -8,8 +8,12 @@ import { testimonials, successStories } from '@/lib/proof-data'
 import { ClientTestimonialsSlider } from '@/components/ClientTestimonialsSlider'
 
 export const metadata: Metadata = {
-  title: 'TFSA Global | India Market Entry & Scalable Growth',
-  description: 'We architect and execute market entry — not just strategy. For global companies expanding into India.',
+  title: 'TFSA Global | India Market Entry & Business Execution Architecture',
+  description:
+    'TFSA Global designs and executes India market entry, GTM distribution, and business architecture for global companies and scaling enterprises.',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function Home() {

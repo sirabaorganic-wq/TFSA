@@ -2,8 +2,12 @@ import type { Metadata } from 'next'
 import { SectionDivider } from '@/components/SectionDivider'
 
 export const metadata: Metadata = {
-  title: 'Services | TFSA Global & TFSA Framework',
-  description: 'Our core services: Market Entry Architecture, GTM Strategy, Distribution Setup, Business Development, and Sales Systems.',
+  title: 'Strategic Services | India Entry, GTM & Distribution Systems — TFSA Global',
+  description:
+    'Explore TFSA Global\'s core services: India market entry architecture, GTM strategy, distribution networks, business development, and scalable sales engines.',
+  alternates: {
+    canonical: '/services',
+  },
 }
 
 function ServiceBlock({ title, problem, whatWeBuild, outcome, delayClassName }: { title: string, problem: string, whatWeBuild: React.ReactNode, outcome: string, delayClassName?: string }) {

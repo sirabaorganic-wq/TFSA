@@ -5,8 +5,12 @@ import { TestimonialCard } from '@/components/PremiumCard'
 import { testimonials } from '@/lib/proof-data'
 
 export const metadata: Metadata = {
-  title: 'The TFSA Framework | Startup Architecture',
-  description: 'Design Your Business. Build Your Freedom. The foundational architecture methodology behind successful scaling.',
+  title: 'The TFSA Framework | Model, Momentum, Money Architecture — TFSA Global',
+  description:
+    'Discover the TFSA Framework: Model (Architecture), Momentum (Systems), and Money (Scale). The structural blueprint to eliminate founder dependency.',
+  alternates: {
+    canonical: '/tfsa-framework',
+  },
 }
 
 export default function TFSAFramework() {
