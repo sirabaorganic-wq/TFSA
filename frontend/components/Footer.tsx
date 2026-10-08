@@ -32,6 +32,9 @@ export function Footer() {
             <p className='text-xs text-[#9CA3AF] mt-2'>
               Contact Number: +91-8882555990.
             </p>
+            <p className='text-xs text-[#9CA3AF] mt-2'>
+              Email: <a href="mailto:info@tfsaglobal.com" className="hover:text-[#B68817] transition-colors">info@tfsaglobal.com</a>
+            </p>
           </div>
 
           {/* Navigation */}
@@ -108,12 +111,12 @@ export function Footer() {
                 </a>
                 <br />
                 <a
-                  href="mailto:tfsaglobal@gmail.com"
+                  href="mailto:info@tfsaglobal.com"
                   className="text-[#6B7280] hover:text-[#B68817] transition-colors duration-150 flex items-center gap-2"
                   aria-label="Email"
                 >
                   <Mail size={16} />
-                  tfsaglobal@gmail.com
+                  info@tfsaglobal.com
                 </a>
               </li>
               {/* <li>

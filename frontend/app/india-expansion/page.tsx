@@ -342,7 +342,7 @@ export default function IndiaExpansion() {
           <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6 text-[#9CA3AF] text-sm">
             <a href="https://www.tfsaglobal.com" className="hover:text-[#B68817] transition-colors">www.tfsaglobal.com</a>
             <span className="hidden md:block text-[#374151]">·</span>
-            <a href="mailto:contact@tfsaglobal.com" className="hover:text-[#B68817] transition-colors">contact@tfsaglobal.com</a>
+            <a href="mailto:info@tfsaglobal.com" className="hover:text-[#B68817] transition-colors">info@tfsaglobal.com</a>
           </div>
         </div>
       </section>

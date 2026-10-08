@@ -251,6 +251,14 @@ export default function Contact() {
                 <p>
                   +91-8882555990.
                 </p>
+                <p className="font-serif text-2xl font-bold text-[#B68817] mb-1">
+                  Email Address:
+                </p>
+                <p>
+                  <a href="mailto:info@tfsaglobal.com" className="hover:text-[#B68817] transition-colors">
+                    info@tfsaglobal.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
